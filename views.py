@@ -2,10 +2,10 @@ import json
 
 import django.http
 import telebot
-from alertBot.service.bot import bot
+from expoBot.service.bot import bot
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
-from alertBot.service.youtrack import assignee_alert, notify
+from expoBot.service.youtrack import assignee_alert, notify
 import settings
 
 

@@ -1,5 +1,5 @@
 """
-WSGI config for alertBot project.
+WSGI config for expoBot project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

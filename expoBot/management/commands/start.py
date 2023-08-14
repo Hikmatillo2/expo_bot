@@ -1,6 +1,6 @@
 import time
 from django.core.management.base import BaseCommand
-from bot.bonum_app.bot import bot
+from elephaBot.service.bot import bot
 
 
 class Command(BaseCommand):

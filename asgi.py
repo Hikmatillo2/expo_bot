@@ -1,5 +1,5 @@
 """
-ASGI config for alertBot project.
+ASGI config for expoBot project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'alertBot.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'expoBot.settings')
 
 application = get_asgi_application()
