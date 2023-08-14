@@ -5,7 +5,6 @@ import telebot
 from expoBot.service.bot import bot
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
-from expoBot.service.youtrack import assignee_alert, notify
 import settings
 
 
@@ -40,4 +39,4 @@ def new_comment(request: django.http.HttpRequest):
     pass
 
 
-bot.set_webhook(url=f'bot.hikmatillo.ru/{settings.BOT_TOKEN}')
+# bot.set_webhook(url=f'bot.hikmatillo.ru/{settings.BOT_TOKEN}')

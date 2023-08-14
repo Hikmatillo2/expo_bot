@@ -7,17 +7,11 @@ class BotUserForm(forms.ModelForm):
         model = BotUser
         fields = (
             'telegram_id',
-            'nickname',
-            'first_name',
-            'second_name',
-            'email',
-            'phone_number',
+            'api_id',
+            'api_hash',
         )
 
         widgets = {
-            'first_name': forms.TextInput,
-            'nickname': forms.TextInput,
-            'second_name': forms.TextInput,
-            'email': forms.EmailInput,
-            'phone_number': forms.TextInput,
+            'api_id': forms.TextInput,
+            'api_hash': forms.TextInput,
         }

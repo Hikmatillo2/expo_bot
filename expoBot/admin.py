@@ -6,11 +6,8 @@ from .forms import *
 class BotUserAdmin(admin.ModelAdmin):
     list_display = [
         'telegram_id',
-        'nickname',
-        'first_name',
-        'second_name',
-        'email',
-        'phone_number',
+        'api_id',
+        'api_hash',
     ]
 
     form = BotUserForm
@@ -20,15 +17,7 @@ class BotUserAdmin(admin.ModelAdmin):
 class BotUserAdmin(admin.ModelAdmin):
     list_display = [
         'user',
-        'on_first_name_input',
-        'on_second_name_input',
-        'on_email_input',
-        'on_phone_number_input',
+        'on_api_id_input',
+        'on_api_hash_input',
     ]
 
-@admin.register(File)
-class BotUserAdmin(admin.ModelAdmin):
-    list_display = [
-        'title',
-        'file',
-    ]

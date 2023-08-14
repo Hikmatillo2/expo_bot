@@ -1,8 +1,22 @@
+import asyncio
 import re
 import pandas as pd
 from telethon.sync import TelegramClient
 
 from expoBot.models import BotUser
+
+
+def synchronize_async_helper(to_await: callable) -> any:
+    async_response = []
+
+    async def run_and_capture_result():
+        r = await to_await
+        async_response.append(r)
+
+    loop = asyncio.get_event_loop()
+    coroutine = run_and_capture_result()
+    loop.run_until_complete(coroutine)
+    return async_response[0]
 
 
 def check_user_message(data: str, email: bool = False) -> bool:
@@ -34,8 +48,8 @@ def get_info(inn_list: list[str], file: bytes, user: BotUser, chat_name: str) ->
     )
 
     for inn in inn_list:
-        api.write_a_message(inn, chat_name)
-        result.append((await api.get_history(chat_name))[0])
+        synchronize_async_helper(api.write_a_message(inn, chat_name))
+        result.append(synchronize_async_helper(api.get_history(chat_name))[0])
 
     return result
 
@@ -57,12 +71,12 @@ class TelethonAPI:
             )
             self.client.start()
 
-    def get_history(self, chat: str):
-        return self.client.get_messages(chat)
+    async def get_history(self, chat: str):
+        return await self.client.get_messages(chat)
 
-    def write_a_message(self, message: str, to: str, ):
+    async def write_a_message(self, message: str, to: str, ):
         entity = await self.client.get_entity(to)
-        self.client.send_message(
+        await self.client.send_message(
             entity=entity,
             message=message,
         )
