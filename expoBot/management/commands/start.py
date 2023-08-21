@@ -1,6 +1,6 @@
 import time
 from django.core.management.base import BaseCommand
-from elephaBot.service.bot import bot
+from expoBot.service.bot import bot
 
 
 class Command(BaseCommand):
@@ -9,5 +9,6 @@ class Command(BaseCommand):
             bot.polling(none_stop=True, interval=5)
         except Exception as e:
             print(str(e))
+            # raise e
             time.sleep(1)
             self.handle()

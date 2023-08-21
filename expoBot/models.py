@@ -27,6 +27,12 @@ class BotUser(models.Model):
         blank=False,
     )
 
+    phone_number = models.TextField(
+        verbose_name='Номер телефона',
+        null=True,
+        blank=False,
+    )
+
     completed = models.BooleanField(
         default=False,
     )
@@ -60,6 +66,20 @@ class BotUserCondition(models.Model):
         null=True,
         blank=False,
     )
+
+    on_phone_number_input = models.BooleanField(
+        verbose_name='Ввод номера телефона',
+        default=False,
+        null=True,
+        blank=False,
+    )
+
+    # on_code_input = models.BooleanField(
+    #     verbose_name='Ввод кода от телеграм',
+    #     default=False,
+    #     null=True,
+    #     blank=False,
+    # )
 
     def __str__(self):
         return f'Состояние для @{self.user.nickname}'

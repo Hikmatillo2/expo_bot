@@ -8,9 +8,9 @@ class BotUserAdmin(admin.ModelAdmin):
         'telegram_id',
         'api_id',
         'api_hash',
+        'phone_number',
     ]
 
-    form = BotUserForm
 
 
 @admin.register(BotUserCondition)
@@ -19,5 +19,5 @@ class BotUserAdmin(admin.ModelAdmin):
         'user',
         'on_api_id_input',
         'on_api_hash_input',
+        'on_phone_number_input',
     ]
-

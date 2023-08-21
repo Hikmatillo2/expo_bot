@@ -1,7 +1,7 @@
 TEXTS: dict[str, list[str]] = {
     '/start': [
         "Добрый день!\nОтправьте мне API_ID, для этого:\n\n",
-        "Отправьте мне ваш API_ID",
+        "Отправьте мне ваш API_HASH",
     ],
     'instruction': [
         "1. Перейдите в @usetgsbot\n"

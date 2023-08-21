@@ -9,8 +9,10 @@ class InlineKeyboard(telebot.types.InlineKeyboardMarkup):  #
 
     def make_keyboard(self):
         for text in self.text:
-            if type(text) == list:
+            if type(text[0]) == list:
                 self.row(*[telebot.types.InlineKeyboardButton(button[0], callback_data=button[1]) for button in text])
+            elif 'https:/' in text[1] or 'http:/' in text[1]:
+                self.add(telebot.types.InlineKeyboardButton(text[0], url=text[1]))
             else:
                 self.add(telebot.types.InlineKeyboardButton(text[0], callback_data=text[1]))
 

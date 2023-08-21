@@ -22,7 +22,4 @@ from views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(f'{settings.BOT_TOKEN}', get_message),
-    path('api/new-comment', new_comment),
-    path('api/new-issue', new_issue),
-    path('api/issue_state', issue_state),
 ]
