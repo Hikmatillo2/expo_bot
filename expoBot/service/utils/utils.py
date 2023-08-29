@@ -6,7 +6,62 @@ import numpy as np
 import pandas as pd
 from telethon.sync import TelegramClient
 
-from expoBot.models import BotUser, BotUserCondition
+from expoBot.models import BotUser
+
+
+class TelethonAPI:
+    def __init__(self, api_id: int, api_hash: str, phone: str):
+        self.phone = phone
+        self.code: str | None = None
+        self.api_id = api_id
+        self.api_hash = api_hash
+        self.client: TelegramClient | None = None
+
+    async def _get_client(self) -> bool:
+        if self.client is None:
+            self.client = TelegramClient(
+                'EXPO_BOT_SESSION',
+                self.api_id,
+                self.api_hash,
+            )
+            await self.client.connect()
+
+            # print(await self.client.is_user_authorized())
+
+            if await self.client.is_user_authorized():
+                # await self.client.start()
+                return True
+            return False
+        return True
+
+    async def send_code(self):
+        # await self._get_client()
+        # await self.client.connect()
+        return await self.client.send_code_request(self.phone)
+
+    async def login(self, phone_code_hash: str):
+        # await self._get_client()
+        await self.client.sign_in(
+            phone=self.phone,
+            code=self.code,
+            phone_code_hash=phone_code_hash,
+        )
+
+    async def get_history(self, chat: str):
+        return await self.client.get_messages(chat)
+
+    async def write_a_message(self, message: str, to: str):
+        # await self._get_client()
+        # entity = await self.client.get_entity(to)
+
+        await self.client.send_message(entity=to, message=message)
+
+        # await self.client.send_message(
+        #     entity=entity,
+        #     message=message,
+        # )
+    def disconnect(self):
+        self.client.disconnect()
 
 
 def synchronize_async_helper(to_await: callable) -> any:
@@ -61,27 +116,26 @@ def parse_eye_of_god(file: bytes, text: str, inn: str):
     return file
 
 
-def telegram_auth_check(user: BotUser) -> bool:
-    api = TelethonAPI(int(user.api_id), user.api_hash, user.phone_number)
+def telegram_auth_check(user: BotUser, api: TelethonAPI) -> bool:
+    # api = TelethonAPI(int(user.api_id), user.api_hash, user.phone_number)
     data = synchronize_async_helper(api._get_client())
     print(data)
-    # 29268485, 'f94a6f78ebb5f669df4a18244b0b000a', phone='89039030557')
     if not data:
         return False
     return True
 
 
-def send_code(user: BotUser) -> str:
-    api = TelethonAPI(int(user.api_id), user.api_hash, user.phone_number)
+def send_code(user: BotUser, api: TelethonAPI) -> str:
+    # api = TelethonAPI(int(user.api_id), user.api_hash, user.phone_number)
     code_request = synchronize_async_helper(api.send_code())
     api.disconnect()
     return code_request.phone_code_hash
 
 
-def telegram_auth(user: BotUser, code: str, phone_code_hash: str) -> str | None:
+def telegram_auth(user: BotUser, code: str, phone_code_hash: str, api: TelethonAPI) -> str | None:
     try:
-        api = TelethonAPI(int(user.api_id), user.api_hash, user.phone_number)
-        data = synchronize_async_helper(api._get_client())
+        # api = TelethonAPI(int(user.api_id), user.api_hash, user.phone_number)
+        # data = synchronize_async_helper(api._get_client())
         api.code = code
         synchronize_async_helper(api.login(phone_code_hash))
         api.disconnect()
@@ -90,11 +144,12 @@ def telegram_auth(user: BotUser, code: str, phone_code_hash: str) -> str | None:
         return str(e)
 
 
-async def get_info(inn_list: list[str], file: bytes, user: BotUser, chat_name: str) -> list[str]:
+async def get_info(inn_list: list[str], file: bytes, user: BotUser, chat_name: str, api: TelethonAPI) -> list[str]:
     result: list[str] = []
 
-    api = TelethonAPI(int(user.api_id), user.api_hash, user.phone_number)
+    # api = TelethonAPI(int(user.api_id), user.api_hash, user.phone_number)
     await api._get_client()
+
     for inn in inn_list:
         await api.write_a_message(f'/inn {inn}', chat_name)
         time.sleep(3)
@@ -105,60 +160,6 @@ async def get_info(inn_list: list[str], file: bytes, user: BotUser, chat_name: s
     return result
 
 
-class TelethonAPI:
-    def __init__(self, api_id: int, api_hash: str, phone: str):
-        self.phone = phone
-        self.code: str | None = None
-        self.api_id = api_id
-        self.api_hash = api_hash
-        self.client: TelegramClient | None = None
-
-    async def _get_client(self) -> bool:
-        if self.client is None:
-            self.client = TelegramClient(
-                'EXPO_BOT_SESSION',
-                self.api_id,
-                self.api_hash,
-            )
-            await self.client.connect()
-
-            # print(await self.client.is_user_authorized())
-
-            if await self.client.is_user_authorized():
-                # await self.client.start()
-                return True
-            return False
-
-    async def send_code(self):
-        await self._get_client()
-        # await self.client.connect()
-        return await self.client.send_code_request(self.phone)
-
-    async def login(self, phone_code_hash: str):
-        # await self._get_client()
-        await self.client.sign_in(
-            phone=self.phone,
-            code=self.code,
-            phone_code_hash=phone_code_hash,
-        )
-
-    async def get_history(self, chat: str):
-        return await self.client.get_messages(chat)
-
-    async def write_a_message(self, message: str, to: str):
-        # await self._get_client()
-        # entity = await self.client.get_entity(to)
-
-        await self.client.send_message(entity=to, message=message)
-
-        # await self.client.send_message(
-        #     entity=entity,
-        #     message=message,
-        # )
-    def disconnect(self):
-        self.client.disconnect()
-
-# api = TelethonAPI(29268485, 'f94a6f78ebb5f669df4a18244b0b000a', phone='89039030557')
 #
 # data = synchronize_async_helper(api._get_client())
 # print('data:', data)

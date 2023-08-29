@@ -8,7 +8,7 @@ class Command(BaseCommand):
         try:
             bot.polling(none_stop=True, interval=5)
         except Exception as e:
-            print(str(e))
-            # raise e
+            # print(str(e))
+            raise e
             time.sleep(1)
             self.handle()

@@ -37,6 +37,11 @@ class BotUser(models.Model):
         default=False,
     )
 
+    # phone_number_hash = models.TextField(
+    #     null=True,
+    #     blank=True,
+    # )
+
     objects = models.Manager()
 
     def __str__(self):
@@ -73,6 +78,13 @@ class BotUserCondition(models.Model):
         null=True,
         blank=False,
     )
+
+    # on_telegram_code_confirmation = models.BooleanField(
+    #     verbose_name='Ввод кода телеграм',
+    #     default=False,
+    #     null=True,
+    #     blank=False,
+    # )
 
     # on_code_input = models.BooleanField(
     #     verbose_name='Ввод кода от телеграм',
