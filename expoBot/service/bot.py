@@ -13,6 +13,7 @@ from expoBot.service.utils.utils import check_user_message, parse_excel, get_inf
 from expoBot.service.utils.texts import TEXTS
 from telebot import TeleBot, types
 from telebot.types import Message
+import random
 
 bot = TeleBot(settings.BOT_TOKEN)
 
@@ -69,12 +70,13 @@ def handle_file_input(message: Message):
         await client.connect()
 
         if await client.is_user_authorized():
-            result = []
+            bot_list = [each.entity for each in list(Bot.objects.all())]
             for inn in inn_list:
-                await client.send_message(entity='@s7moc85ll_bot_bot', message=f'/inn {inn}')
+                entity = random.choice(bot_list)
+                await client.send_message(entity=entity, message=f'/inn {inn}')
                 import time
-                time.sleep(5)
-                data = (await client.get_messages(entity='@s7moc85ll_bot_bot', limit=1))[0].message
+                time.sleep(15)
+                data = (await client.get_messages(entity=entity, limit=1))[0].message
                 phone_number_pattern = "\\+?[1-9][0-9]{7,14}"
                 phone_nums: list[str] = re.findall(phone_number_pattern, data)
 
@@ -116,6 +118,7 @@ def handle_file_input(message: Message):
                     await client.connect()
                     if '_' in message.text:
                         print("_ in message")
+                        bot_list = [each.entity for each in list(Bot.objects.all())]
                         code = ''.join(message.text.split('_'))
                         await client.sign_in(
                             phone=phone,
@@ -124,10 +127,11 @@ def handle_file_input(message: Message):
                         )
 
                         for inn in inn_list:
-                            await client.send_message(entity='@s7moc85ll_bot_bot', message=f'/inn {inn}')
+                            entity = random.choice(bot_list)
+                            await client.send_message(entity=entity, message=f'/inn {inn}')
                             import time
-                            time.sleep(5)
-                            data = (await client.get_messages(entity='@s7moc85ll_bot_bot', limit=1))[0].message
+                            time.sleep(15)
+                            data = (await client.get_messages(entity=entity, limit=1))[0].message
 
                             phone_number_pattern = "\\+?[1-9][0-9]{7,14}"
                             phone_nums = re.findall(phone_number_pattern, data)
