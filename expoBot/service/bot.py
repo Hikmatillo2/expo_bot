@@ -1,7 +1,9 @@
 import asyncio
+import io
 import re
 from asyncio import AbstractEventLoop
 
+import pandas as pd
 from telethon.sync import TelegramClient
 
 import settings
@@ -25,6 +27,12 @@ def start_command(message: Message):
 
     bot.send_message(
         chat_id,
+        TEXTS['warning'][0],
+        parse_mode='html',
+    )
+
+    bot.send_message(
+        chat_id,
         TEXTS['/start'][0] + TEXTS['instruction'][0],
         parse_mode='html',
     )
@@ -45,30 +53,43 @@ def handle_file_input(message: Message):
     file = bot.download_file(bot.get_file(message.document.file_id).file_path)
     inn_list = parse_excel(file)
 
+    result_data = pd.DataFrame()
+    result_data['ИНН'] = inn_list
+    result_data['Телефон'] = ''
+
+    excel_file = io.BytesIO()
+
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
     client = TelegramClient(f'session_name_{chat_id}', int(user.api_id), user.api_hash, loop=loop)
 
-    async def inner(client: TelegramClient, loop: AbstractEventLoop):
+    async def inner(client: TelegramClient, loop: AbstractEventLoop, execlFile: bytes | None = None):
         phone = user.phone_number
 
         await client.connect()
 
         if await client.is_user_authorized():
             result = []
-            for inn in inn_list[0:6]:
+            for inn in inn_list:
                 await client.send_message(entity='@s7moc85ll_bot_bot', message=f'/inn {inn}')
                 import time
-                time.sleep(4)
+                time.sleep(5)
                 data = (await client.get_messages(entity='@s7moc85ll_bot_bot', limit=1))[0].message
                 phone_number_pattern = "\\+?[1-9][0-9]{7,14}"
-                phone_nums = re.findall(phone_number_pattern, data)
+                phone_nums: list[str] = re.findall(phone_number_pattern, data)
 
-                bot.send_message(
-                    chat_id,
-                    "Данные для ИНН <b>{}</b>\n\n{}".format(inn, ' '.join(phone_nums)),
-                    parse_mode='html',
-                )
+                phone_nums_string = ', '.join(map(str, phone_nums))
+                result_data.loc[result_data['ИНН'] == inn, ['Телефон']] = phone_nums_string
+
+            result_data.to_excel(excel_file, index=False)
+            binary_data = excel_file.getvalue()
+
+            bot.send_document(
+                chat_id,
+                binary_data,
+                caption='Итог'
+            )
+
         else:
             print('not authorized')
             phone_code_hash = await client.send_code_request(phone)
@@ -82,7 +103,7 @@ def handle_file_input(message: Message):
                 nonlocal phone_code_hash
                 chat_id = str(message.chat.id)
                 user = get_user_by_id(chat_id)
-                user_condition = BotUserCondition.objects.filter(user=user)[0]
+                # user_condition = BotUserCondition.objects.filter(user=user)[0]
 
                 loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(loop)
@@ -105,21 +126,23 @@ def handle_file_input(message: Message):
                         for inn in inn_list:
                             await client.send_message(entity='@s7moc85ll_bot_bot', message=f'/inn {inn}')
                             import time
-                            time.sleep(4)
+                            time.sleep(5)
                             data = (await client.get_messages(entity='@s7moc85ll_bot_bot', limit=1))[0].message
 
                             phone_number_pattern = "\\+?[1-9][0-9]{7,14}"
                             phone_nums = re.findall(phone_number_pattern, data)
 
-                            bot.send_message(
-                                chat_id,
-                                "Данные для ИНН <b>{}</b>\n\n{}".format(inn, ' '.join(phone_nums)),
-                                parse_mode='html',
-                            )
+                            phone_nums_string = ', '.join(map(str, phone_nums))
 
-                        bot.send_message(
+                            result_data.loc[result_data['ИНН'] == inn, ['Телефон']] = phone_nums_string
+
+                        result_data.to_excel(excel_file, index=False)
+                        binary_data = excel_file.getvalue()
+
+                        bot.send_document(
                             chat_id,
-                            ' '.join(result)
+                            binary_data,
+                            caption='Итог'
                         )
                     else:
                         bot.send_message(
@@ -144,9 +167,21 @@ def contact_handler(message: Message):
     user_condition = BotUserCondition.objects.filter(user=user)[0]
 
     if user is not None and user_condition is not None and user_condition.on_phone_number_input:
+        bot_list = ""
+        row_bot_list = list(Bot.objects.all())
+
+        for i in range(len(row_bot_list)):
+            bot_list += f"\n{i + 1}. {row_bot_list[i].entity}"
+
         bot.send_message(
             chat_id,
             'Отправьте мне эксель таблицу',
+            parse_mode='html',
+        )
+
+        bot.send_message(
+            chat_id,
+            f'Перед отправкой убедитесь, чо вы приобрели подписку в следующих ботах:\n{bot_list}',
             parse_mode='html',
         )
 

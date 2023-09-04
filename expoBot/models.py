@@ -99,3 +99,11 @@ class BotUserCondition(models.Model):
     class Meta:
         verbose_name = 'Состояние пользователя'
         verbose_name_plural = 'Состояния пользователей'
+
+
+class Bot(models.Model):
+    entity = models.TextField(
+        verbose_name='ID бота',
+        null=True,
+        blank=False,
+    )
