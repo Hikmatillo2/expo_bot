@@ -63,14 +63,14 @@ def handle_file_input(message: Message):
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
     client = TelegramClient(f'session_name_{chat_id}', int(user.api_id), user.api_hash, loop=loop)
-
+    bot_list = [each.entity for each in list(Bot.objects.all())]
     async def inner(client: TelegramClient, loop: AbstractEventLoop, execlFile: bytes | None = None):
         phone = user.phone_number
 
         await client.connect()
 
         if await client.is_user_authorized():
-            bot_list = [each.entity for each in list(Bot.objects.all())]
+
             for inn in inn_list:
                 entity = random.choice(bot_list)
                 await client.send_message(entity=entity, message=f'/inn {inn}')
@@ -118,7 +118,6 @@ def handle_file_input(message: Message):
                     await client.connect()
                     if '_' in message.text:
                         print("_ in message")
-                        bot_list = [each.entity for each in list(Bot.objects.all())]
                         code = ''.join(message.text.split('_'))
                         await client.sign_in(
                             phone=phone,
