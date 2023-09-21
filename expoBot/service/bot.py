@@ -47,22 +47,27 @@ def start_command(message: Message):
 @bot.message_handler(content_types=['document'])
 def handle_file_input(message: Message):
     chat_id = str(message.chat.id)
-
+    #print('File loaded to RAM')
     user = get_user_by_id(chat_id)
     user_condition = BotUserCondition.objects.filter(user=user)[0]
-
+    
+    #print('File loaded to RAM2')
+    
     file = bot.download_file(bot.get_file(message.document.file_id).file_path)
+    #print('File loaded to RAM3')
     inn_list = parse_excel(file)
-
+    
+    #print('File loaded to RAM3')
+    
     result_data = pd.DataFrame()
     result_data['ИНН'] = inn_list
     result_data['Телефон'] = ''
 
     excel_file = io.BytesIO()
-
+    #print('File loaded to RAM4')
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
-    client = TelegramClient(f'session_name_{chat_id}', int(user.api_id), user.api_hash, loop=loop)
+    client = TelegramClient(None, int(user.api_id), user.api_hash, loop=loop)
     bot_list = [each.entity for each in list(Bot.objects.all())]
     async def inner(client: TelegramClient, loop: AbstractEventLoop, execlFile: bytes | None = None):
         phone = user.phone_number
@@ -75,7 +80,7 @@ def handle_file_input(message: Message):
                 entity = random.choice(bot_list)
                 await client.send_message(entity=entity, message=f'/inn {inn}')
                 import time
-                time.sleep(15)
+                time.sleep(30)
                 data = (await client.get_messages(entity=entity, limit=1))[0].message
                 phone_number_pattern = "\\+?[1-9][0-9]{7,14}"
                 phone_nums: list[str] = re.findall(phone_number_pattern, data)
@@ -109,7 +114,7 @@ def handle_file_input(message: Message):
 
                 loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(loop)
-                client = TelegramClient(f'session_name_{chat_id}', int(user.api_id), user.api_hash, loop=loop)
+                client = TelegramClient(None, int(user.api_id), user.api_hash, loop=loop)
 
                 async def inner(client: TelegramClient, loop: AbstractEventLoop):
                     nonlocal phone_code_hash
@@ -129,7 +134,7 @@ def handle_file_input(message: Message):
                             entity = random.choice(bot_list)
                             await client.send_message(entity=entity, message=f'/inn {inn}')
                             import time
-                            time.sleep(15)
+                            time.sleep(30)
                             data = (await client.get_messages(entity=entity, limit=1))[0].message
 
                             phone_number_pattern = "\\+?[1-9][0-9]{7,14}"

@@ -1,0 +1,51 @@
+version: "3"
+services:
+  database:
+    hostname: database
+    image: postgres:15.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=d4a8f0435b2b866f855323d7d021a79164d2e13b
+    ports:
+      - 13487:5432
+    volumes:
+      - elof_database3:/var/lib/postgresql/data
+    networks:
+      nw:
+        aliases:
+          - database
+  bot:
+      restart: always
+      build: ./
+      command: /srv/telegram_admin/run.sh
+      environment:
+        - DATABASE_URL=database
+        - DATABASE_NAME=ytb
+        - DATABASE_USER=postgres
+        - DATABASE_PASSWORD=d4a8f0435b2b866f855323d7d021a79164d2e13b
+        - DATABASE_HOST=database
+        - DATABASE_PORT=5432
+        - BOT_TOKEN=6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+        - DOMAIN=expo-bot.ru
+        - CHANNEL_ID=-1001550428902
+        - SERVER=True
+        - DEBUG=True
+      ports:
+        - "88:88"
+      depends_on:
+        - database
+      hostname: bot
+      networks:
+        nw:
+          aliases:
+            - bot
+
+networks:
+  nw:
+  share:
+    driver:
+      bridge
+
+volumes:
+  elof_database3:
