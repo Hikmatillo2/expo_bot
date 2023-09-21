@@ -1,13 +1,16 @@
 #!/bin/bash
 
 sleep 10
-psql postgresql://postgres:postgres@database -f psql.sql
+psql postgresql://postgres:d4a8f0435b2b866f855323d7d021a79164d2e13b@database -f psql.sql
 
 service nginx start
 # database postgresql start
 python3 manage.py collectstatic --noinput
 sleep 1
-chmod -R u+w /srv/
+whoami
+python3 test.py
+
+#chmod -R u+w /srv/
 python3 manage.py migrate
 sleep 1
 # chown www-data:www-data /srv/db.sqlite3

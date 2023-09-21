@@ -98,8 +98,14 @@ def check_user_message(data: str, email: bool = False) -> bool:
 
 
 def parse_excel(file: bytes) -> list[str]:
-    df = pd.ExcelFile(file).parse(index_col=0)
+    import io
+    df = pd.ExcelFile(io.BytesIO(file)).parse(index_col=0)
     return df.index.tolist()
+
+
+#def parse_excel(file: bytes) -> list[str]:
+#    df = pd.ExcelFile(file).parse(index_col=0)
+#    return df.index.tolist()
     # data = pd.read_excel(file, index_col=0)
     # data['Телефон'] = np.nan
     # data.to_excel(file, index=False)
