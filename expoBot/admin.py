@@ -12,7 +12,6 @@ class BotUserAdmin(admin.ModelAdmin):
     ]
 
 
-
 @admin.register(BotUserCondition)
 class BotUserAdmin(admin.ModelAdmin):
     list_display = [
@@ -20,4 +19,11 @@ class BotUserAdmin(admin.ModelAdmin):
         'on_api_id_input',
         'on_api_hash_input',
         'on_phone_number_input',
+    ]
+
+
+@admin.register(Bot)
+class BotAdmin(admin.ModelAdmin):
+    list_display = [
+        'entity'
     ]
