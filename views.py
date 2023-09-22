@@ -18,4 +18,5 @@ def get_message(request: django.http.HttpRequest):
     return HttpResponse('Method Not Allowed', 405)
 
 
+# bot.remove_webhook()
 bot.set_webhook(url=f'{settings.DOMAIN}/{settings.BOT_TOKEN}')

@@ -5,7 +5,7 @@ from asyncio import AbstractEventLoop
 
 import pandas as pd
 from telethon.sync import TelegramClient
-
+import pyrogram
 import settings
 from expoBot.service.utils.database import *
 from expoBot.service.utils.utils import check_user_message, parse_excel, get_info, telegram_auth_check, send_code, \
@@ -67,26 +67,30 @@ def handle_file_input(message: Message):
     #print('File loaded to RAM4')
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
-    client = TelegramClient(f'{user.telegram_id}', int(user.api_id), user.api_hash, loop=loop)
+    client = pyrogram.Client(f'{user.telegram_id}', int(user.api_id), user.api_hash)
     bot_list = [each.entity for each in list(Bot.objects.all())]
 
-    async def inner(client: TelegramClient, loop: AbstractEventLoop, execlFile: bytes | None = None):
+    async def inner(client: pyrogram.Client, loop: AbstractEventLoop, execlFile: bytes | None = None):
         phone = user.phone_number
 
         await client.connect()
 
-        if await client.is_user_authorized():
+        if client.is_connected:
 
             for inn in inn_list:
                 entity = random.choice(bot_list)
                 try:
-                    await client.send_message(entity=entity, message=f'/inn {inn}')
+                    await client.send_message(entity, f'/inn {inn}')
                 except Exception as e:
                     bot.send_message(chat_id, f'Произошла ошибка при отправки ИНН боту {entity}')
                     continue
                 import time
                 time.sleep(30)
-                data = (await client.get_messages(entity=entity, limit=1))[0].message
+
+                data = None
+                async for each in client.get_chat_history(entity, limit=1):
+                    data = each.text
+
                 phone_number_pattern = "\\+?[1-9][0-9]{7,14}"
                 phone_nums: list[str] = re.findall(phone_number_pattern, data)
 
@@ -104,7 +108,7 @@ def handle_file_input(message: Message):
 
         else:
             print('not authorized')
-            phone_code_hash = await client.send_code_request(phone)
+            phone_code_hash = await client.send_code(phone)
 
             bot.send_message(
                 chat_id,
@@ -120,9 +124,8 @@ def handle_file_input(message: Message):
                 loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(loop)
                 import random
-                client = TelegramClient(f'{user.telegram_id}', int(user.api_id), user.api_hash, loop=loop)
 
-                async def inner(client: TelegramClient, loop: AbstractEventLoop):
+                async def inner(client: pyrogram.Client, loop: AbstractEventLoop):
                     nonlocal phone_code_hash
                     phone = user.phone_number
 
@@ -131,22 +134,25 @@ def handle_file_input(message: Message):
                         print("_ in message")
                         code = ''.join(message.text.split('_'))
                         await client.sign_in(
-                            phone=phone,
-                            code=code,
-                            phone_code_hash=phone_code_hash.phone_code_hash,
+                            phone,
+                            phone_code_hash.phone_code_hash,
+                            code,
                         )
 
                         for inn in inn_list:
 
                             entity = random.choice(bot_list)
                             try:
-                                await client.send_message(entity=entity, message=f'/inn {inn}')
+                                await client.send_message(entity, f'/inn {inn}')
                             except Exception as e:
                                 bot.send_message(chat_id, f'Произошла ошибка при отправки ИНН боту {entity}')
                                 continue
                             import time
                             time.sleep(30)
-                            data = (await client.get_messages(entity=entity, limit=1))[0].message
+
+                            data = None
+                            async for each in client.get_chat_history(entity, limit=1):
+                                data = each.text
 
                             phone_number_pattern = "\\+?[1-9][0-9]{7,14}"
                             phone_nums = re.findall(phone_number_pattern, data)
