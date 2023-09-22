@@ -14,10 +14,31 @@ from expoBot.service.utils.texts import TEXTS
 from telebot import TeleBot, types
 from telebot.types import Message
 import random
+from pyrogram import errors
 
 bot = TeleBot(settings.BOT_TOKEN)
 
-bot.remove_webhook()
+
+def check(app: pyrogram.Client) -> bool | None:
+    try:
+        app.get_me()
+    except (
+            errors.ActiveUserRequired,
+            errors.AuthKeyInvalid,
+            errors.AuthKeyPermEmpty,
+            errors.AuthKeyUnregistered,
+            errors.AuthKeyDuplicated,
+            errors.SessionExpired,
+            errors.SessionPasswordNeeded,
+            errors.SessionRevoked,
+            errors.UserDeactivated,
+            errors.UserDeactivatedBan,
+    ):
+        return False
+    else:
+        return True
+
+
 @bot.message_handler(commands=['start'])
 def start_command(message: Message):
     chat_id = str(message.chat.id)
@@ -47,24 +68,24 @@ def start_command(message: Message):
 @bot.message_handler(content_types=['document'])
 def handle_file_input(message: Message):
     chat_id = str(message.chat.id)
-    #print('File loaded to RAM')
+    # print('File loaded to RAM')
     user = get_user_by_id(chat_id)
     user_condition = BotUserCondition.objects.filter(user=user)[0]
-    
-    #print('File loaded to RAM2')
-    
+
+    # print('File loaded to RAM2')
+
     file = bot.download_file(bot.get_file(message.document.file_id).file_path)
-    #print('File loaded to RAM3')
+    # print('File loaded to RAM3')
     inn_list = parse_excel(file)
-    
-    #print('File loaded to RAM3')
-    
+
+    # print('File loaded to RAM3')
+
     result_data = pd.DataFrame()
     result_data['ИНН'] = inn_list
     result_data['Телефон'] = ''
 
     excel_file = io.BytesIO()
-    #print('File loaded to RAM4')
+    # print('File loaded to RAM4')
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
     client = pyrogram.Client(f'{user.telegram_id}', int(user.api_id), user.api_hash)
@@ -75,7 +96,7 @@ def handle_file_input(message: Message):
 
         await client.connect()
 
-        if client.is_connected:
+        if check(client):
 
             for inn in inn_list:
                 entity = random.choice(bot_list)
