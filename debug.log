@@ -106,3 +106,121 @@ INFO 2023-09-19 03:16:24,492 basehttp log_message 136712 139766975968832 "POST /
 INFO 2023-09-19 03:16:49,907 autoreload run_with_reloader 136745 140654549512192 Watching for file changes with StatReloader
 INFO 2023-09-19 03:16:52,555 basehttp log_message 136745 140654160791104 "POST /5208812086:AAEZYEDe6j3Xc1hPzwCREoqhwGjU54nor_I HTTP/1.0" 200 1
 INFO 2023-09-19 03:16:52,555 basehttp log_message 136745 140654160791104 "POST /5208812086:AAEZYEDe6j3Xc1hPzwCREoqhwGjU54nor_I HTTP/1.0" 200 1
+INFO 2023-09-21 11:47:51,726 autoreload run_with_reloader 7324 8461475328 Watching for file changes with StatReloader
+INFO 2023-09-21 11:48:28,290 autoreload run_with_reloader 7350 8461475328 Watching for file changes with StatReloader
+INFO 2023-09-21 11:49:11,319 autoreload run_with_reloader 7364 8461475328 Watching for file changes with StatReloader
+WARNING 2023-09-21 11:49:14,533 log log_response 7364 6171242496 Not Found: /
+WARNING 2023-09-21 11:49:14,535 basehttp log_message 7364 6171242496 "GET / HTTP/1.1" 404 2198
+WARNING 2023-09-21 11:49:14,535 basehttp log_message 7364 6171242496 "GET / HTTP/1.1" 404 2198
+WARNING 2023-09-21 11:49:14,618 log log_response 7364 6171242496 Not Found: /favicon.ico
+WARNING 2023-09-21 11:49:14,619 basehttp log_message 7364 6171242496 "GET /favicon.ico HTTP/1.1" 404 2249
+WARNING 2023-09-21 11:49:14,619 basehttp log_message 7364 6171242496 "GET /favicon.ico HTTP/1.1" 404 2249
+INFO 2023-09-21 11:49:17,916 basehttp log_message 7364 6171242496 "GET /admin HTTP/1.1" 301 0
+INFO 2023-09-21 11:49:17,916 basehttp log_message 7364 6171242496 "GET /admin HTTP/1.1" 301 0
+INFO 2023-09-21 11:49:17,946 basehttp log_message 7364 6171242496 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-09-21 11:49:17,946 basehttp log_message 7364 6171242496 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-09-21 11:49:17,956 basehttp log_message 7364 6171242496 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3148
+INFO 2023-09-21 11:49:17,956 basehttp log_message 7364 6171242496 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3148
+INFO 2023-09-21 11:49:17,979 basehttp log_message 7364 10838355968 "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2023-09-21 11:49:17,979 basehttp log_message 7364 10838355968 "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2023-09-21 11:49:17,980 basehttp log_message 7364 10855182336 "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2023-09-21 11:49:17,980 basehttp log_message 7364 10855182336 "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2023-09-21 11:49:17,980 basehttp log_message 7364 6171242496 "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 59344
+INFO 2023-09-21 11:49:17,980 basehttp log_message 7364 6171242496 "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 59344
+INFO 2023-09-21 11:49:17,981 basehttp log_message 7364 10888835072 "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2023-09-21 11:49:17,981 basehttp log_message 7364 10888835072 "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2023-09-21 11:49:17,985 basehttp log_message 7364 10872008704 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+INFO 2023-09-21 11:49:17,985 basehttp log_message 7364 10872008704 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+INFO 2023-09-21 11:49:17,985 basehttp log_message 7364 10855182336 "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2023-09-21 11:49:17,985 basehttp log_message 7364 10855182336 "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2023-09-21 11:49:17,987 basehttp log_message 7364 10787876864 "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2023-09-21 11:49:17,987 basehttp log_message 7364 10787876864 "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2023-09-21 11:49:18,215 basehttp log_message 7364 10787876864 "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78196
+INFO 2023-09-21 11:49:18,215 basehttp log_message 7364 10787876864 "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78196
+INFO 2023-09-21 11:49:19,437 basehttp log_message 7364 6171242496 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2023-09-21 11:49:19,437 basehttp log_message 7364 6171242496 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2023-09-21 11:49:19,460 basehttp log_message 7364 6171242496 "GET /admin/ HTTP/1.1" 200 23469
+INFO 2023-09-21 11:49:19,460 basehttp log_message 7364 6171242496 "GET /admin/ HTTP/1.1" 200 23469
+INFO 2023-09-21 11:49:19,481 basehttp log_message 7364 6171242496 "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2023-09-21 11:49:19,481 basehttp log_message 7364 6171242496 "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2023-09-21 11:49:19,526 basehttp log_message 7364 6171242496 "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13276
+INFO 2023-09-21 11:49:19,526 basehttp log_message 7364 6171242496 "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13276
+INFO 2023-09-21 11:49:20,803 basehttp log_message 7364 6171242496 "GET /admin/expoBot/botuser/ HTTP/1.1" 200 17226
+INFO 2023-09-21 11:49:20,803 basehttp log_message 7364 6171242496 "GET /admin/expoBot/botuser/ HTTP/1.1" 200 17226
+INFO 2023-09-21 11:49:20,825 basehttp log_message 7364 6171242496 "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2023-09-21 11:49:20,825 basehttp log_message 7364 6171242496 "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2023-09-21 11:49:20,833 basehttp log_message 7364 6171242496 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+INFO 2023-09-21 11:49:20,833 basehttp log_message 7364 6171242496 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+INFO 2023-09-21 11:49:20,834 basehttp log_message 7364 10838355968 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2023-09-21 11:49:20,834 basehttp log_message 7364 10872008704 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+INFO 2023-09-21 11:49:20,834 basehttp log_message 7364 10855182336 "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+INFO 2023-09-21 11:49:20,834 basehttp log_message 7364 10888835072 "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2023-09-21 11:49:20,834 basehttp log_message 7364 10838355968 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2023-09-21 11:49:20,834 basehttp log_message 7364 10872008704 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+INFO 2023-09-21 11:49:20,834 basehttp log_message 7364 10855182336 "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+INFO 2023-09-21 11:49:20,834 basehttp log_message 7364 10888835072 "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2023-09-21 11:49:20,840 basehttp log_message 7364 10787876864 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-09-21 11:49:20,841 basehttp log_message 7364 6171242496 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2023-09-21 11:49:20,840 basehttp log_message 7364 10787876864 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-09-21 11:49:20,841 basehttp log_message 7364 6171242496 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2023-09-21 11:49:20,843 basehttp log_message 7364 10888835072 "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2023-09-21 11:49:20,843 basehttp log_message 7364 10888835072 "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2023-09-21 11:49:20,844 basehttp log_message 7364 10855182336 "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2023-09-21 11:49:20,844 basehttp log_message 7364 10855182336 "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2023-09-21 11:49:20,850 basehttp log_message 7364 10838355968 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2023-09-21 11:49:20,850 basehttp log_message 7364 10838355968 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2023-09-21 11:50:12,625 autoreload run_with_reloader 7467 8461475328 Watching for file changes with StatReloader
+INFO 2023-09-21 11:50:43,263 autoreload trigger_reload 7467 8461475328 /Users/hikmatillo/PycharmProjects/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-21 11:50:43,694 autoreload run_with_reloader 7491 8461475328 Watching for file changes with StatReloader
+INFO 2023-09-21 11:51:04,198 autoreload trigger_reload 7491 8461475328 /Users/hikmatillo/PycharmProjects/expo_bot/views.py changed, reloading.
+INFO 2023-09-21 11:51:04,690 autoreload run_with_reloader 7517 8461475328 Watching for file changes with StatReloader
+INFO 2023-09-22 01:55:00,406 autoreload trigger_reload 7517 8461475328 /Users/hikmatillo/PycharmProjects/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 01:55:01,164 autoreload run_with_reloader 12914 8461475328 Watching for file changes with StatReloader
+INFO 2023-09-22 02:07:23,223 basehttp log_message 12914 6162935808 "GET /admin/expoBot/bot/ HTTP/1.1" 200 12770
+INFO 2023-09-22 02:07:23,223 basehttp log_message 12914 6162935808 "GET /admin/expoBot/bot/ HTTP/1.1" 200 12770
+INFO 2023-09-22 02:07:23,252 basehttp log_message 12914 6162935808 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-09-22 02:07:23,252 basehttp log_message 12914 6162935808 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-09-22 02:07:24,725 basehttp log_message 12914 6162935808 "GET /admin/expoBot/bot/add/ HTTP/1.1" 200 13935
+INFO 2023-09-22 02:07:24,725 basehttp log_message 12914 6162935808 "GET /admin/expoBot/bot/add/ HTTP/1.1" 200 13935
+INFO 2023-09-22 02:07:24,752 basehttp log_message 12914 6179762176 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2023-09-22 02:07:24,752 basehttp log_message 12914 6263894016 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2023-09-22 02:07:24,752 basehttp log_message 12914 6179762176 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2023-09-22 02:07:24,752 basehttp log_message 12914 6263894016 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2023-09-22 02:07:24,754 basehttp log_message 12914 6162935808 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-09-22 02:07:24,754 basehttp log_message 12914 6162935808 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-09-22 02:07:24,756 basehttp log_message 12914 6162935808 "GET /static/jazzmin/js/change_form.js HTTP/1.1" 200 6052
+INFO 2023-09-22 02:07:24,756 basehttp log_message 12914 6162935808 "GET /static/jazzmin/js/change_form.js HTTP/1.1" 200 6052
+INFO 2023-09-22 02:07:27,261 basehttp log_message 12914 6162935808 "GET /admin/expoBot/bot/add/ HTTP/1.1" 200 13935
+INFO 2023-09-22 02:07:27,261 basehttp log_message 12914 6162935808 "GET /admin/expoBot/bot/add/ HTTP/1.1" 200 13935
+INFO 2023-09-22 02:07:27,286 basehttp log_message 12914 6162935808 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-09-22 02:07:27,286 basehttp log_message 12914 6162935808 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-09-22 02:07:43,640 basehttp log_message 12914 6162935808 "POST /admin/expoBot/bot/add/ HTTP/1.1" 302 0
+INFO 2023-09-22 02:07:43,640 basehttp log_message 12914 6162935808 "POST /admin/expoBot/bot/add/ HTTP/1.1" 302 0
+INFO 2023-09-22 02:07:43,659 basehttp log_message 12914 6162935808 "GET /admin/expoBot/bot/ HTTP/1.1" 200 15731
+INFO 2023-09-22 02:07:43,659 basehttp log_message 12914 6162935808 "GET /admin/expoBot/bot/ HTTP/1.1" 200 15731
+INFO 2023-09-22 02:07:43,679 basehttp log_message 12914 6162935808 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-09-22 02:07:43,679 basehttp log_message 12914 6162935808 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-09-22 02:07:50,060 basehttp log_message 12914 6162935808 "GET /admin/expoBot/bot/add/ HTTP/1.1" 200 13935
+INFO 2023-09-22 02:07:50,060 basehttp log_message 12914 6162935808 "GET /admin/expoBot/bot/add/ HTTP/1.1" 200 13935
+INFO 2023-09-22 02:07:50,081 basehttp log_message 12914 6162935808 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-09-22 02:07:50,081 basehttp log_message 12914 6162935808 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-09-22 02:07:53,919 basehttp log_message 12914 6162935808 "POST /admin/expoBot/bot/add/ HTTP/1.1" 302 0
+INFO 2023-09-22 02:07:53,919 basehttp log_message 12914 6162935808 "POST /admin/expoBot/bot/add/ HTTP/1.1" 302 0
+INFO 2023-09-22 02:07:53,937 basehttp log_message 12914 6162935808 "GET /admin/expoBot/bot/ HTTP/1.1" 200 16051
+INFO 2023-09-22 02:07:53,937 basehttp log_message 12914 6162935808 "GET /admin/expoBot/bot/ HTTP/1.1" 200 16051
+INFO 2023-09-22 02:07:53,958 basehttp log_message 12914 6162935808 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-09-22 02:07:53,958 basehttp log_message 12914 6162935808 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-09-22 02:08:01,671 basehttp log_message 12914 6162935808 "GET /admin/expoBot/bot/add/ HTTP/1.1" 200 13935
+INFO 2023-09-22 02:08:01,671 basehttp log_message 12914 6162935808 "GET /admin/expoBot/bot/add/ HTTP/1.1" 200 13935
+INFO 2023-09-22 02:08:01,696 basehttp log_message 12914 6162935808 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-09-22 02:08:01,696 basehttp log_message 12914 6162935808 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-09-22 02:08:03,176 basehttp log_message 12914 6162935808 "POST /admin/expoBot/bot/add/ HTTP/1.1" 302 0
+INFO 2023-09-22 02:08:03,176 basehttp log_message 12914 6162935808 "POST /admin/expoBot/bot/add/ HTTP/1.1" 302 0
+INFO 2023-09-22 02:08:03,192 basehttp log_message 12914 6162935808 "GET /admin/expoBot/bot/ HTTP/1.1" 200 16366
+INFO 2023-09-22 02:08:03,192 basehttp log_message 12914 6162935808 "GET /admin/expoBot/bot/ HTTP/1.1" 200 16366
+INFO 2023-09-22 02:08:03,211 basehttp log_message 12914 6162935808 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-09-22 02:08:03,211 basehttp log_message 12914 6162935808 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-09-22 02:12:04,400 autoreload trigger_reload 12914 8461475328 /Users/hikmatillo/PycharmProjects/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 02:12:05,136 autoreload run_with_reloader 13130 8461475328 Watching for file changes with StatReloader
+INFO 2023-09-22 02:21:50,443 autoreload trigger_reload 13130 8461475328 /Users/hikmatillo/PycharmProjects/expo_bot/views.py changed, reloading.
+INFO 2023-09-22 02:21:50,983 autoreload run_with_reloader 13347 8461475328 Watching for file changes with StatReloader

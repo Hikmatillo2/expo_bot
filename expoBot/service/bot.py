@@ -17,7 +17,7 @@ import random
 
 bot = TeleBot(settings.BOT_TOKEN)
 
-
+bot.remove_webhook()
 @bot.message_handler(commands=['start'])
 def start_command(message: Message):
     chat_id = str(message.chat.id)
@@ -67,8 +67,9 @@ def handle_file_input(message: Message):
     #print('File loaded to RAM4')
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
-    client = TelegramClient(None, int(user.api_id), user.api_hash, loop=loop)
+    client = TelegramClient(f'{user.telegram_id}', int(user.api_id), user.api_hash, loop=loop)
     bot_list = [each.entity for each in list(Bot.objects.all())]
+
     async def inner(client: TelegramClient, loop: AbstractEventLoop, execlFile: bytes | None = None):
         phone = user.phone_number
 
@@ -78,7 +79,11 @@ def handle_file_input(message: Message):
 
             for inn in inn_list:
                 entity = random.choice(bot_list)
-                await client.send_message(entity=entity, message=f'/inn {inn}')
+                try:
+                    await client.send_message(entity=entity, message=f'/inn {inn}')
+                except Exception as e:
+                    bot.send_message(chat_id, f'Произошла ошибка при отправки ИНН боту {entity}')
+                    continue
                 import time
                 time.sleep(30)
                 data = (await client.get_messages(entity=entity, limit=1))[0].message
@@ -114,7 +119,8 @@ def handle_file_input(message: Message):
 
                 loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(loop)
-                client = TelegramClient(None, int(user.api_id), user.api_hash, loop=loop)
+                import random
+                client = TelegramClient(f'{user.telegram_id}', int(user.api_id), user.api_hash, loop=loop)
 
                 async def inner(client: TelegramClient, loop: AbstractEventLoop):
                     nonlocal phone_code_hash
@@ -131,8 +137,13 @@ def handle_file_input(message: Message):
                         )
 
                         for inn in inn_list:
+
                             entity = random.choice(bot_list)
-                            await client.send_message(entity=entity, message=f'/inn {inn}')
+                            try:
+                                await client.send_message(entity=entity, message=f'/inn {inn}')
+                            except Exception as e:
+                                bot.send_message(chat_id, f'Произошла ошибка при отправки ИНН боту {entity}')
+                                continue
                             import time
                             time.sleep(30)
                             data = (await client.get_messages(entity=entity, limit=1))[0].message
