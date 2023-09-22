@@ -6,3 +6,524 @@ INFO 2023-09-22 15:33:11,234 autoreload trigger_reload 22033 8461475328 /Users/h
 INFO 2023-09-22 15:33:12,166 autoreload run_with_reloader 22071 8461475328 Watching for file changes with StatReloader
 INFO 2023-09-22 15:33:48,523 autoreload trigger_reload 22071 8461475328 /Users/hikmatillo/PycharmProjects/expo_bot/expoBot/service/bot.py changed, reloading.
 INFO 2023-09-22 15:33:49,135 autoreload run_with_reloader 22092 8461475328 Watching for file changes with StatReloader
+INFO 2023-09-22 15:49:46,223 autoreload run_with_reloader 254011 140160175165440 Watching for file changes with StatReloader
+INFO 2023-09-22 15:49:55,297 basehttp log_message 254011 140159783056960 "GET /admin/expoBot/bot/ HTTP/1.0" 200 16119
+INFO 2023-09-22 15:49:55,297 basehttp log_message 254011 140159783056960 "GET /admin/expoBot/bot/ HTTP/1.0" 200 16119
+WARNING 2023-09-22 15:49:55,459 log log_response 254011 140159783056960 Not Found: /staticvendor/fontawesome-free/css/all.min.css
+INFO 2023-09-22 15:49:55,499 basehttp log_message 254011 140159395812928 "GET /admin/jsi18n/ HTTP/1.0" 200 16066
+INFO 2023-09-22 15:49:55,499 basehttp log_message 254011 140159395812928 "GET /admin/jsi18n/ HTTP/1.0" 200 16066
+WARNING 2023-09-22 15:49:55,537 log log_response 254011 140159395812928 Not Found: /staticvendor/adminlte/css/adminlte.min.css
+WARNING 2023-09-22 15:49:55,543 basehttp log_message 254011 140159783056960 "GET /staticvendor/fontawesome-free/css/all.min.css HTTP/1.0" 404 2351
+WARNING 2023-09-22 15:49:55,543 basehttp log_message 254011 140159783056960 "GET /staticvendor/fontawesome-free/css/all.min.css HTTP/1.0" 404 2351
+WARNING 2023-09-22 15:49:55,601 log log_response 254011 140159783056960 Not Found: /staticadmin/js/vendor/jquery/jquery.js
+WARNING 2023-09-22 15:49:55,606 log log_response 254011 140159379027520 Not Found: /staticvendor/select2/css/select2.min.css
+WARNING 2023-09-22 15:49:55,620 log log_response 254011 140159387420224 Not Found: /staticjazzmin/css/main.css
+WARNING 2023-09-22 15:49:55,673 basehttp log_message 254011 140159379027520 "GET /staticvendor/select2/css/select2.min.css HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:49:55,673 basehttp log_message 254011 140159379027520 "GET /staticvendor/select2/css/select2.min.css HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:49:55,687 log log_response 254011 140159370634816 Not Found: /staticadmin/js/jquery.init.js
+WARNING 2023-09-22 15:49:55,716 basehttp log_message 254011 140159395812928 "GET /staticvendor/adminlte/css/adminlte.min.css HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:49:55,716 basehttp log_message 254011 140159395812928 "GET /staticvendor/adminlte/css/adminlte.min.css HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:49:55,725 log log_response 254011 140159362242112 Not Found: /staticadmin/js/core.js
+WARNING 2023-09-22 15:49:55,729 basehttp log_message 254011 140159387420224 "GET /staticjazzmin/css/main.css HTTP/1.0" 404 2294
+WARNING 2023-09-22 15:49:55,730 basehttp log_message 254011 140159783056960 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:49:55,729 basehttp log_message 254011 140159387420224 "GET /staticjazzmin/css/main.css HTTP/1.0" 404 2294
+WARNING 2023-09-22 15:49:55,730 basehttp log_message 254011 140159783056960 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:49:55,808 basehttp log_message 254011 140159370634816 "GET /staticadmin/js/jquery.init.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 15:49:55,808 basehttp log_message 254011 140159370634816 "GET /staticadmin/js/jquery.init.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 15:49:55,852 log log_response 254011 140159387420224 Not Found: /staticadmin/js/actions.js
+WARNING 2023-09-22 15:49:56,000 basehttp log_message 254011 140159362242112 "GET /staticadmin/js/core.js HTTP/1.0" 404 2282
+WARNING 2023-09-22 15:49:56,014 log log_response 254011 140159783056960 Not Found: /staticadmin/js/prepopulate.js
+WARNING 2023-09-22 15:49:56,000 basehttp log_message 254011 140159362242112 "GET /staticadmin/js/core.js HTTP/1.0" 404 2282
+WARNING 2023-09-22 15:49:56,024 log log_response 254011 140159379027520 Not Found: /staticadmin/js/admin/RelatedObjectLookups.js
+WARNING 2023-09-22 15:49:56,086 log log_response 254011 140159370634816 Not Found: /staticadmin/js/urlify.js
+WARNING 2023-09-22 15:49:56,113 log log_response 254011 140159395812928 Not Found: /staticadmin/js/vendor/xregexp/xregexp.js
+WARNING 2023-09-22 15:49:56,128 log log_response 254011 140159362242112 Not Found: /staticvendor/adminlte/img/AdminLTELogo.png
+WARNING 2023-09-22 15:49:56,184 basehttp log_message 254011 140159387420224 "GET /staticadmin/js/actions.js HTTP/1.0" 404 2291
+WARNING 2023-09-22 15:49:56,195 basehttp log_message 254011 140159783056960 "GET /staticadmin/js/prepopulate.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 15:49:56,195 basehttp log_message 254011 140159783056960 "GET /staticadmin/js/prepopulate.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 15:49:56,268 basehttp log_message 254011 140159370634816 "GET /staticadmin/js/urlify.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:49:56,184 basehttp log_message 254011 140159387420224 "GET /staticadmin/js/actions.js HTTP/1.0" 404 2291
+WARNING 2023-09-22 15:49:56,268 basehttp log_message 254011 140159370634816 "GET /staticadmin/js/urlify.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:49:56,294 basehttp log_message 254011 140159362242112 "GET /staticvendor/adminlte/img/AdminLTELogo.png HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:49:56,294 basehttp log_message 254011 140159362242112 "GET /staticvendor/adminlte/img/AdminLTELogo.png HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:49:56,331 basehttp log_message 254011 140159379027520 "GET /staticadmin/js/admin/RelatedObjectLookups.js HTTP/1.0" 404 2348
+WARNING 2023-09-22 15:49:56,331 basehttp log_message 254011 140159379027520 "GET /staticadmin/js/admin/RelatedObjectLookups.js HTTP/1.0" 404 2348
+WARNING 2023-09-22 15:49:56,379 basehttp log_message 254011 140159395812928 "GET /staticadmin/js/vendor/xregexp/xregexp.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:49:56,384 log log_response 254011 140159783056960 Not Found: /staticvendor/bootstrap/js/bootstrap.min.js
+WARNING 2023-09-22 15:49:56,379 basehttp log_message 254011 140159395812928 "GET /staticadmin/js/vendor/xregexp/xregexp.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:49:56,467 basehttp log_message 254011 140159783056960 "GET /staticvendor/bootstrap/js/bootstrap.min.js HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:49:56,467 basehttp log_message 254011 140159783056960 "GET /staticvendor/bootstrap/js/bootstrap.min.js HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:49:56,477 log log_response 254011 140159395812928 Not Found: /staticvendor/adminlte/js/adminlte.min.js
+WARNING 2023-09-22 15:49:56,527 log log_response 254011 140159387420224 Not Found: /staticadmin/js/vendor/jquery/jquery.js
+WARNING 2023-09-22 15:49:56,586 log log_response 254011 140159783056960 Not Found: /staticvendor/select2/js/select2.min.js
+WARNING 2023-09-22 15:49:56,605 basehttp log_message 254011 140159395812928 "GET /staticvendor/adminlte/js/adminlte.min.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:49:56,605 basehttp log_message 254011 140159395812928 "GET /staticvendor/adminlte/js/adminlte.min.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:49:56,608 log log_response 254011 140159379027520 Not Found: /staticjazzmin/js/main.js
+WARNING 2023-09-22 15:49:56,671 log log_response 254011 140159362242112 Not Found: /staticjazzmin/js/change_list.js
+WARNING 2023-09-22 15:49:56,738 basehttp log_message 254011 140159387420224 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:49:56,740 basehttp log_message 254011 140159783056960 "GET /staticvendor/select2/js/select2.min.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:49:56,738 basehttp log_message 254011 140159387420224 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:49:56,740 basehttp log_message 254011 140159783056960 "GET /staticvendor/select2/js/select2.min.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:49:56,767 basehttp log_message 254011 140159379027520 "GET /staticjazzmin/js/main.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:49:56,767 basehttp log_message 254011 140159379027520 "GET /staticjazzmin/js/main.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:49:56,794 basehttp log_message 254011 140159362242112 "GET /staticjazzmin/js/change_list.js HTTP/1.0" 404 2309
+WARNING 2023-09-22 15:49:56,794 basehttp log_message 254011 140159362242112 "GET /staticjazzmin/js/change_list.js HTTP/1.0" 404 2309
+WARNING 2023-09-22 15:49:56,927 log log_response 254011 140159362242112 Not Found: /staticvendor/adminlte/img/AdminLTELogo.png
+WARNING 2023-09-22 15:49:56,988 basehttp log_message 254011 140159362242112 "GET /staticvendor/adminlte/img/AdminLTELogo.png HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:49:56,988 basehttp log_message 254011 140159362242112 "GET /staticvendor/adminlte/img/AdminLTELogo.png HTTP/1.0" 404 2342
+INFO 2023-09-22 15:49:58,534 basehttp log_message 254011 140159362242112 "GET /admin/expoBot/bot/ HTTP/1.0" 200 16119
+INFO 2023-09-22 15:49:58,534 basehttp log_message 254011 140159362242112 "GET /admin/expoBot/bot/ HTTP/1.0" 200 16119
+WARNING 2023-09-22 15:49:58,651 log log_response 254011 140159783056960 Not Found: /staticvendor/adminlte/css/adminlte.min.css
+WARNING 2023-09-22 15:49:58,656 log log_response 254011 140159362242112 Not Found: /staticadmin/js/vendor/jquery/jquery.js
+WARNING 2023-09-22 15:49:58,666 log log_response 254011 140159387420224 Not Found: /staticvendor/select2/css/select2.min.css
+WARNING 2023-09-22 15:49:58,702 log log_response 254011 140159395812928 Not Found: /staticvendor/fontawesome-free/css/all.min.css
+WARNING 2023-09-22 15:49:58,736 log log_response 254011 140159370634816 Not Found: /staticjazzmin/css/main.css
+WARNING 2023-09-22 15:49:58,813 basehttp log_message 254011 140159362242112 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:49:58,813 basehttp log_message 254011 140159362242112 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:49:58,827 basehttp log_message 254011 140159387420224 "GET /staticvendor/select2/css/select2.min.css HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:49:58,827 basehttp log_message 254011 140159387420224 "GET /staticvendor/select2/css/select2.min.css HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:49:58,864 basehttp log_message 254011 140159370634816 "GET /staticjazzmin/css/main.css HTTP/1.0" 404 2294
+WARNING 2023-09-22 15:49:58,864 basehttp log_message 254011 140159370634816 "GET /staticjazzmin/css/main.css HTTP/1.0" 404 2294
+WARNING 2023-09-22 15:49:58,866 basehttp log_message 254011 140159395812928 "GET /staticvendor/fontawesome-free/css/all.min.css HTTP/1.0" 404 2351
+WARNING 2023-09-22 15:49:58,866 basehttp log_message 254011 140159395812928 "GET /staticvendor/fontawesome-free/css/all.min.css HTTP/1.0" 404 2351
+INFO 2023-09-22 15:49:58,875 basehttp log_message 254011 140159379027520 "GET /admin/jsi18n/ HTTP/1.0" 200 16066
+INFO 2023-09-22 15:49:58,875 basehttp log_message 254011 140159379027520 "GET /admin/jsi18n/ HTTP/1.0" 200 16066
+WARNING 2023-09-22 15:49:58,877 basehttp log_message 254011 140159783056960 "GET /staticvendor/adminlte/css/adminlte.min.css HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:49:58,877 basehttp log_message 254011 140159783056960 "GET /staticvendor/adminlte/css/adminlte.min.css HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:49:58,902 log log_response 254011 140159783056960 Not Found: /staticadmin/js/jquery.init.js
+WARNING 2023-09-22 15:49:58,911 log log_response 254011 140159379027520 Not Found: /staticadmin/js/core.js
+WARNING 2023-09-22 15:49:58,998 basehttp log_message 254011 140159783056960 "GET /staticadmin/js/jquery.init.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 15:49:58,998 basehttp log_message 254011 140159783056960 "GET /staticadmin/js/jquery.init.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 15:49:59,009 log log_response 254011 140159395812928 Not Found: /staticadmin/js/actions.js
+WARNING 2023-09-22 15:49:59,057 log log_response 254011 140159370634816 Not Found: /staticadmin/js/admin/RelatedObjectLookups.js
+WARNING 2023-09-22 15:49:59,106 log log_response 254011 140159387420224 Not Found: /staticadmin/js/urlify.js
+WARNING 2023-09-22 15:49:59,130 basehttp log_message 254011 140159379027520 "GET /staticadmin/js/core.js HTTP/1.0" 404 2282
+WARNING 2023-09-22 15:49:59,130 basehttp log_message 254011 140159379027520 "GET /staticadmin/js/core.js HTTP/1.0" 404 2282
+WARNING 2023-09-22 15:49:59,168 log log_response 254011 140159783056960 Not Found: /staticadmin/js/vendor/xregexp/xregexp.js
+WARNING 2023-09-22 15:49:59,181 basehttp log_message 254011 140159370634816 "GET /staticadmin/js/admin/RelatedObjectLookups.js HTTP/1.0" 404 2348
+WARNING 2023-09-22 15:49:59,187 basehttp log_message 254011 140159395812928 "GET /staticadmin/js/actions.js HTTP/1.0" 404 2291
+WARNING 2023-09-22 15:49:59,181 basehttp log_message 254011 140159370634816 "GET /staticadmin/js/admin/RelatedObjectLookups.js HTTP/1.0" 404 2348
+WARNING 2023-09-22 15:49:59,214 log log_response 254011 140159362242112 Not Found: /staticadmin/js/prepopulate.js
+WARNING 2023-09-22 15:49:59,187 basehttp log_message 254011 140159395812928 "GET /staticadmin/js/actions.js HTTP/1.0" 404 2291
+WARNING 2023-09-22 15:49:59,225 basehttp log_message 254011 140159387420224 "GET /staticadmin/js/urlify.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:49:59,225 basehttp log_message 254011 140159387420224 "GET /staticadmin/js/urlify.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:49:59,321 log log_response 254011 140159395812928 Not Found: /staticvendor/bootstrap/js/bootstrap.min.js
+WARNING 2023-09-22 15:49:59,333 basehttp log_message 254011 140159362242112 "GET /staticadmin/js/prepopulate.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 15:49:59,335 basehttp log_message 254011 140159783056960 "GET /staticadmin/js/vendor/xregexp/xregexp.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:49:59,333 basehttp log_message 254011 140159362242112 "GET /staticadmin/js/prepopulate.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 15:49:59,335 basehttp log_message 254011 140159783056960 "GET /staticadmin/js/vendor/xregexp/xregexp.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:49:59,372 log log_response 254011 140159379027520 Not Found: /staticvendor/adminlte/img/AdminLTELogo.png
+WARNING 2023-09-22 15:49:59,476 basehttp log_message 254011 140159395812928 "GET /staticvendor/bootstrap/js/bootstrap.min.js HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:49:59,476 basehttp log_message 254011 140159395812928 "GET /staticvendor/bootstrap/js/bootstrap.min.js HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:49:59,496 log log_response 254011 140159783056960 Not Found: /staticvendor/adminlte/js/adminlte.min.js
+WARNING 2023-09-22 15:49:59,572 log log_response 254011 140159370634816 Not Found: /staticvendor/select2/js/select2.min.js
+WARNING 2023-09-22 15:49:59,576 basehttp log_message 254011 140159379027520 "GET /staticvendor/adminlte/img/AdminLTELogo.png HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:49:59,576 basehttp log_message 254011 140159379027520 "GET /staticvendor/adminlte/img/AdminLTELogo.png HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:49:59,605 log log_response 254011 140159387420224 Not Found: /staticjazzmin/js/change_list.js
+WARNING 2023-09-22 15:49:59,613 log log_response 254011 140159362242112 Not Found: /staticjazzmin/js/main.js
+WARNING 2023-09-22 15:49:59,631 log log_response 254011 140159395812928 Not Found: /staticadmin/js/vendor/jquery/jquery.js
+WARNING 2023-09-22 15:49:59,675 basehttp log_message 254011 140159783056960 "GET /staticvendor/adminlte/js/adminlte.min.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:49:59,675 basehttp log_message 254011 140159783056960 "GET /staticvendor/adminlte/js/adminlte.min.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:49:59,714 basehttp log_message 254011 140159387420224 "GET /staticjazzmin/js/change_list.js HTTP/1.0" 404 2309
+WARNING 2023-09-22 15:49:59,714 basehttp log_message 254011 140159387420224 "GET /staticjazzmin/js/change_list.js HTTP/1.0" 404 2309
+WARNING 2023-09-22 15:49:59,717 basehttp log_message 254011 140159362242112 "GET /staticjazzmin/js/main.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:49:59,717 basehttp log_message 254011 140159362242112 "GET /staticjazzmin/js/main.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:49:59,719 basehttp log_message 254011 140159370634816 "GET /staticvendor/select2/js/select2.min.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:49:59,719 basehttp log_message 254011 140159370634816 "GET /staticvendor/select2/js/select2.min.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:49:59,770 basehttp log_message 254011 140159395812928 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:49:59,770 basehttp log_message 254011 140159395812928 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+INFO 2023-09-22 15:50:03,243 basehttp log_message 254011 140159395812928 "GET /admin/expoBot/bot/ HTTP/1.0" 200 16119
+INFO 2023-09-22 15:50:03,243 basehttp log_message 254011 140159395812928 "GET /admin/expoBot/bot/ HTTP/1.0" 200 16119
+WARNING 2023-09-22 15:50:03,342 log log_response 254011 140159395812928 Not Found: /staticjazzmin/css/main.css
+WARNING 2023-09-22 15:50:03,395 log log_response 254011 140159387420224 Not Found: /staticadmin/js/vendor/jquery/jquery.js
+WARNING 2023-09-22 15:50:03,434 log log_response 254011 140159362242112 Not Found: /staticvendor/adminlte/css/adminlte.min.css
+WARNING 2023-09-22 15:50:03,459 basehttp log_message 254011 140159395812928 "GET /staticjazzmin/css/main.css HTTP/1.0" 404 2294
+INFO 2023-09-22 15:50:03,470 basehttp log_message 254011 140159370634816 "GET /admin/jsi18n/ HTTP/1.0" 200 16066
+WARNING 2023-09-22 15:50:03,459 basehttp log_message 254011 140159395812928 "GET /staticjazzmin/css/main.css HTTP/1.0" 404 2294
+WARNING 2023-09-22 15:50:03,485 log log_response 254011 140159379027520 Not Found: /staticvendor/select2/css/select2.min.css
+WARNING 2023-09-22 15:50:03,488 log log_response 254011 140159783056960 Not Found: /staticvendor/fontawesome-free/css/all.min.css
+INFO 2023-09-22 15:50:03,470 basehttp log_message 254011 140159370634816 "GET /admin/jsi18n/ HTTP/1.0" 200 16066
+WARNING 2023-09-22 15:50:03,612 basehttp log_message 254011 140159362242112 "GET /staticvendor/adminlte/css/adminlte.min.css HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:50:03,612 basehttp log_message 254011 140159362242112 "GET /staticvendor/adminlte/css/adminlte.min.css HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:50:03,644 log log_response 254011 140158875727424 Not Found: /staticadmin/js/core.js
+WARNING 2023-09-22 15:50:03,658 basehttp log_message 254011 140159387420224 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:50:03,658 basehttp log_message 254011 140159387420224 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:50:03,663 basehttp log_message 254011 140159379027520 "GET /staticvendor/select2/css/select2.min.css HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:50:03,663 basehttp log_message 254011 140159379027520 "GET /staticvendor/select2/css/select2.min.css HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:50:03,663 basehttp log_message 254011 140159783056960 "GET /staticvendor/fontawesome-free/css/all.min.css HTTP/1.0" 404 2351
+WARNING 2023-09-22 15:50:03,668 log log_response 254011 140159395812928 Not Found: /staticadmin/js/jquery.init.js
+WARNING 2023-09-22 15:50:03,743 log log_response 254011 140159370634816 Not Found: /staticadmin/js/admin/RelatedObjectLookups.js
+WARNING 2023-09-22 15:50:03,663 basehttp log_message 254011 140159783056960 "GET /staticvendor/fontawesome-free/css/all.min.css HTTP/1.0" 404 2351
+WARNING 2023-09-22 15:50:03,785 log log_response 254011 140159387420224 Not Found: /staticadmin/js/actions.js
+WARNING 2023-09-22 15:50:03,811 log log_response 254011 140159379027520 Not Found: /staticadmin/js/prepopulate.js
+WARNING 2023-09-22 15:50:03,889 basehttp log_message 254011 140158875727424 "GET /staticadmin/js/core.js HTTP/1.0" 404 2282
+WARNING 2023-09-22 15:50:03,889 basehttp log_message 254011 140158875727424 "GET /staticadmin/js/core.js HTTP/1.0" 404 2282
+WARNING 2023-09-22 15:50:03,953 basehttp log_message 254011 140159395812928 "GET /staticadmin/js/jquery.init.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 15:50:03,953 basehttp log_message 254011 140159395812928 "GET /staticadmin/js/jquery.init.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 15:50:03,961 basehttp log_message 254011 140159370634816 "GET /staticadmin/js/admin/RelatedObjectLookups.js HTTP/1.0" 404 2348
+WARNING 2023-09-22 15:50:03,961 basehttp log_message 254011 140159370634816 "GET /staticadmin/js/admin/RelatedObjectLookups.js HTTP/1.0" 404 2348
+WARNING 2023-09-22 15:50:03,963 basehttp log_message 254011 140159387420224 "GET /staticadmin/js/actions.js HTTP/1.0" 404 2291
+WARNING 2023-09-22 15:50:03,988 log log_response 254011 140159362242112 Not Found: /staticadmin/js/urlify.js
+WARNING 2023-09-22 15:50:03,963 basehttp log_message 254011 140159387420224 "GET /staticadmin/js/actions.js HTTP/1.0" 404 2291
+WARNING 2023-09-22 15:50:04,046 log log_response 254011 140159370634816 Not Found: /staticadmin/js/vendor/xregexp/xregexp.js
+WARNING 2023-09-22 15:50:04,066 basehttp log_message 254011 140159379027520 "GET /staticadmin/js/prepopulate.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 15:50:04,095 log log_response 254011 140159395812928 Not Found: /staticvendor/bootstrap/js/bootstrap.min.js
+WARNING 2023-09-22 15:50:04,104 log log_response 254011 140158875727424 Not Found: /staticvendor/adminlte/img/AdminLTELogo.png
+WARNING 2023-09-22 15:50:04,066 basehttp log_message 254011 140159379027520 "GET /staticadmin/js/prepopulate.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 15:50:04,270 basehttp log_message 254011 140159362242112 "GET /staticadmin/js/urlify.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:50:04,270 basehttp log_message 254011 140159362242112 "GET /staticadmin/js/urlify.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:50:04,275 basehttp log_message 254011 140159370634816 "GET /staticadmin/js/vendor/xregexp/xregexp.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:50:04,275 basehttp log_message 254011 140159370634816 "GET /staticadmin/js/vendor/xregexp/xregexp.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:50:04,293 basehttp log_message 254011 140159395812928 "GET /staticvendor/bootstrap/js/bootstrap.min.js HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:50:04,293 basehttp log_message 254011 140159395812928 "GET /staticvendor/bootstrap/js/bootstrap.min.js HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:50:04,330 basehttp log_message 254011 140158875727424 "GET /staticvendor/adminlte/img/AdminLTELogo.png HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:50:04,330 basehttp log_message 254011 140158875727424 "GET /staticvendor/adminlte/img/AdminLTELogo.png HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:50:04,360 log log_response 254011 140158875727424 Not Found: /staticvendor/adminlte/js/adminlte.min.js
+WARNING 2023-09-22 15:50:04,456 log log_response 254011 140159370634816 Not Found: /staticjazzmin/js/main.js
+WARNING 2023-09-22 15:50:04,473 log log_response 254011 140159362242112 Not Found: /staticvendor/select2/js/select2.min.js
+WARNING 2023-09-22 15:50:04,485 log log_response 254011 140159395812928 Not Found: /staticjazzmin/js/change_list.js
+WARNING 2023-09-22 15:50:04,503 log log_response 254011 140159783056960 Not Found: /staticadmin/js/vendor/jquery/jquery.js
+WARNING 2023-09-22 15:50:04,548 basehttp log_message 254011 140158875727424 "GET /staticvendor/adminlte/js/adminlte.min.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:50:04,548 basehttp log_message 254011 140158875727424 "GET /staticvendor/adminlte/js/adminlte.min.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:50:04,558 basehttp log_message 254011 140159370634816 "GET /staticjazzmin/js/main.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:50:04,558 basehttp log_message 254011 140159370634816 "GET /staticjazzmin/js/main.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:50:04,583 basehttp log_message 254011 140159362242112 "GET /staticvendor/select2/js/select2.min.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:50:04,583 basehttp log_message 254011 140159362242112 "GET /staticvendor/select2/js/select2.min.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:50:04,622 basehttp log_message 254011 140159395812928 "GET /staticjazzmin/js/change_list.js HTTP/1.0" 404 2309
+WARNING 2023-09-22 15:50:04,622 basehttp log_message 254011 140159395812928 "GET /staticjazzmin/js/change_list.js HTTP/1.0" 404 2309
+WARNING 2023-09-22 15:50:04,635 basehttp log_message 254011 140159783056960 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:50:04,635 basehttp log_message 254011 140159783056960 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+INFO 2023-09-22 15:50:57,615 autoreload run_with_reloader 254186 140648540315648 Watching for file changes with StatReloader
+INFO 2023-09-22 15:51:03,454 basehttp log_message 254186 140648148227648 "GET /admin/expoBot/bot/ HTTP/1.0" 200 16119
+INFO 2023-09-22 15:51:03,454 basehttp log_message 254186 140648148227648 "GET /admin/expoBot/bot/ HTTP/1.0" 200 16119
+WARNING 2023-09-22 15:51:03,595 log log_response 254186 140648148227648 Not Found: /staticvendor/fontawesome-free/css/all.min.css
+WARNING 2023-09-22 15:51:03,639 log log_response 254186 140647629583936 Not Found: /staticvendor/adminlte/css/adminlte.min.css
+WARNING 2023-09-22 15:51:03,867 basehttp log_message 254186 140648148227648 "GET /staticvendor/fontawesome-free/css/all.min.css HTTP/1.0" 404 2351
+WARNING 2023-09-22 15:51:03,867 basehttp log_message 254186 140648148227648 "GET /staticvendor/fontawesome-free/css/all.min.css HTTP/1.0" 404 2351
+WARNING 2023-09-22 15:51:03,885 basehttp log_message 254186 140647629583936 "GET /staticvendor/adminlte/css/adminlte.min.css HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:51:03,885 basehttp log_message 254186 140647629583936 "GET /staticvendor/adminlte/css/adminlte.min.css HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:51:03,929 log log_response 254186 140647621191232 Not Found: /staticjazzmin/css/main.css
+WARNING 2023-09-22 15:51:03,947 log log_response 254186 140648148227648 Not Found: /staticvendor/select2/css/select2.min.css
+WARNING 2023-09-22 15:51:04,033 log log_response 254186 140647629583936 Not Found: /staticadmin/js/vendor/jquery/jquery.js
+WARNING 2023-09-22 15:51:04,057 log log_response 254186 140647604405824 Not Found: /staticadmin/js/jquery.init.js
+WARNING 2023-09-22 15:51:04,181 basehttp log_message 254186 140648148227648 "GET /staticvendor/select2/css/select2.min.css HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:51:04,181 basehttp log_message 254186 140648148227648 "GET /staticvendor/select2/css/select2.min.css HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:51:04,204 basehttp log_message 254186 140647629583936 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+INFO 2023-09-22 15:51:04,229 basehttp log_message 254186 140647612798528 "GET /admin/jsi18n/ HTTP/1.0" 200 16066
+WARNING 2023-09-22 15:51:04,233 basehttp log_message 254186 140647604405824 "GET /staticadmin/js/jquery.init.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 15:51:04,233 basehttp log_message 254186 140647604405824 "GET /staticadmin/js/jquery.init.js HTTP/1.0" 404 2303
+INFO 2023-09-22 15:51:04,229 basehttp log_message 254186 140647612798528 "GET /admin/jsi18n/ HTTP/1.0" 200 16066
+WARNING 2023-09-22 15:51:04,204 basehttp log_message 254186 140647629583936 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:51:04,234 basehttp log_message 254186 140647621191232 "GET /staticjazzmin/css/main.css HTTP/1.0" 404 2294
+WARNING 2023-09-22 15:51:04,234 basehttp log_message 254186 140647621191232 "GET /staticjazzmin/css/main.css HTTP/1.0" 404 2294
+WARNING 2023-09-22 15:51:04,327 log log_response 254186 140647629583936 Not Found: /staticadmin/js/admin/RelatedObjectLookups.js
+WARNING 2023-09-22 15:51:04,363 log log_response 254186 140647604405824 Not Found: /staticadmin/js/core.js
+WARNING 2023-09-22 15:51:04,434 log log_response 254186 140647612798528 Not Found: /staticadmin/js/urlify.js
+WARNING 2023-09-22 15:51:04,471 log log_response 254186 140647621191232 Not Found: /staticadmin/js/actions.js
+WARNING 2023-09-22 15:51:04,504 log log_response 254186 140648148227648 Not Found: /staticadmin/js/prepopulate.js
+WARNING 2023-09-22 15:51:04,520 basehttp log_message 254186 140647629583936 "GET /staticadmin/js/admin/RelatedObjectLookups.js HTTP/1.0" 404 2348
+WARNING 2023-09-22 15:51:04,520 basehttp log_message 254186 140647629583936 "GET /staticadmin/js/admin/RelatedObjectLookups.js HTTP/1.0" 404 2348
+WARNING 2023-09-22 15:51:04,576 basehttp log_message 254186 140647612798528 "GET /staticadmin/js/urlify.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:51:04,576 basehttp log_message 254186 140647612798528 "GET /staticadmin/js/urlify.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:51:04,630 log log_response 254186 140647612798528 Not Found: /staticadmin/js/vendor/xregexp/xregexp.js
+WARNING 2023-09-22 15:51:04,638 basehttp log_message 254186 140648148227648 "GET /staticadmin/js/prepopulate.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 15:51:04,638 basehttp log_message 254186 140648148227648 "GET /staticadmin/js/prepopulate.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 15:51:04,645 basehttp log_message 254186 140647604405824 "GET /staticadmin/js/core.js HTTP/1.0" 404 2282
+WARNING 2023-09-22 15:51:04,645 basehttp log_message 254186 140647604405824 "GET /staticadmin/js/core.js HTTP/1.0" 404 2282
+WARNING 2023-09-22 15:51:04,701 basehttp log_message 254186 140647621191232 "GET /staticadmin/js/actions.js HTTP/1.0" 404 2291
+WARNING 2023-09-22 15:51:04,701 basehttp log_message 254186 140647621191232 "GET /staticadmin/js/actions.js HTTP/1.0" 404 2291
+WARNING 2023-09-22 15:51:04,716 log log_response 254186 140647629583936 Not Found: /staticvendor/adminlte/img/AdminLTELogo.png
+WARNING 2023-09-22 15:51:04,728 log log_response 254186 140648148227648 Not Found: /staticvendor/bootstrap/js/bootstrap.min.js
+WARNING 2023-09-22 15:51:04,737 basehttp log_message 254186 140647612798528 "GET /staticadmin/js/vendor/xregexp/xregexp.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:51:04,737 basehttp log_message 254186 140647612798528 "GET /staticadmin/js/vendor/xregexp/xregexp.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:51:04,828 basehttp log_message 254186 140648148227648 "GET /staticvendor/bootstrap/js/bootstrap.min.js HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:51:04,828 basehttp log_message 254186 140648148227648 "GET /staticvendor/bootstrap/js/bootstrap.min.js HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:51:04,837 log log_response 254186 140647612798528 Not Found: /staticvendor/select2/js/select2.min.js
+WARNING 2023-09-22 15:51:04,886 basehttp log_message 254186 140647629583936 "GET /staticvendor/adminlte/img/AdminLTELogo.png HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:51:04,886 basehttp log_message 254186 140647629583936 "GET /staticvendor/adminlte/img/AdminLTELogo.png HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:51:04,954 log log_response 254186 140647604405824 Not Found: /staticvendor/adminlte/js/adminlte.min.js
+WARNING 2023-09-22 15:51:04,990 log log_response 254186 140647596013120 Not Found: /staticjazzmin/js/change_list.js
+WARNING 2023-09-22 15:51:05,055 basehttp log_message 254186 140647612798528 "GET /staticvendor/select2/js/select2.min.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:51:05,055 basehttp log_message 254186 140647612798528 "GET /staticvendor/select2/js/select2.min.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:51:05,072 log log_response 254186 140647587620416 Not Found: /staticadmin/js/vendor/jquery/jquery.js
+WARNING 2023-09-22 15:51:05,086 log log_response 254186 140647621191232 Not Found: /staticjazzmin/js/main.js
+WARNING 2023-09-22 15:51:05,139 basehttp log_message 254186 140647604405824 "GET /staticvendor/adminlte/js/adminlte.min.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:51:05,139 basehttp log_message 254186 140647604405824 "GET /staticvendor/adminlte/js/adminlte.min.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:51:05,140 basehttp log_message 254186 140647596013120 "GET /staticjazzmin/js/change_list.js HTTP/1.0" 404 2309
+WARNING 2023-09-22 15:51:05,140 basehttp log_message 254186 140647596013120 "GET /staticjazzmin/js/change_list.js HTTP/1.0" 404 2309
+WARNING 2023-09-22 15:51:05,172 basehttp log_message 254186 140647621191232 "GET /staticjazzmin/js/main.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:51:05,172 basehttp log_message 254186 140647621191232 "GET /staticjazzmin/js/main.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:51:05,175 basehttp log_message 254186 140647587620416 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:51:05,175 basehttp log_message 254186 140647587620416 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+INFO 2023-09-22 15:51:05,962 basehttp log_message 254186 140647587620416 "GET /admin/expoBot/bot/ HTTP/1.0" 200 16119
+INFO 2023-09-22 15:51:05,962 basehttp log_message 254186 140647587620416 "GET /admin/expoBot/bot/ HTTP/1.0" 200 16119
+WARNING 2023-09-22 15:51:06,086 log log_response 254186 140647596013120 Not Found: /staticvendor/adminlte/css/adminlte.min.css
+WARNING 2023-09-22 15:51:06,093 log log_response 254186 140647587620416 Not Found: /staticvendor/fontawesome-free/css/all.min.css
+WARNING 2023-09-22 15:51:06,171 log log_response 254186 140647604405824 Not Found: /staticadmin/js/vendor/jquery/jquery.js
+INFO 2023-09-22 15:51:06,214 basehttp log_message 254186 140647621191232 "GET /admin/jsi18n/ HTTP/1.0" 200 16066
+WARNING 2023-09-22 15:51:06,220 basehttp log_message 254186 140647596013120 "GET /staticvendor/adminlte/css/adminlte.min.css HTTP/1.0" 404 2342
+INFO 2023-09-22 15:51:06,214 basehttp log_message 254186 140647621191232 "GET /admin/jsi18n/ HTTP/1.0" 200 16066
+WARNING 2023-09-22 15:51:06,220 basehttp log_message 254186 140647596013120 "GET /staticvendor/adminlte/css/adminlte.min.css HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:51:06,264 log log_response 254186 140648148227648 Not Found: /staticvendor/select2/css/select2.min.css
+WARNING 2023-09-22 15:51:06,269 log log_response 254186 140647629583936 Not Found: /staticjazzmin/css/main.css
+WARNING 2023-09-22 15:51:06,366 basehttp log_message 254186 140647587620416 "GET /staticvendor/fontawesome-free/css/all.min.css HTTP/1.0" 404 2351
+WARNING 2023-09-22 15:51:06,366 basehttp log_message 254186 140647587620416 "GET /staticvendor/fontawesome-free/css/all.min.css HTTP/1.0" 404 2351
+WARNING 2023-09-22 15:51:06,386 basehttp log_message 254186 140647604405824 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:51:06,386 basehttp log_message 254186 140647604405824 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:51:06,416 log log_response 254186 140647596013120 Not Found: /staticadmin/js/jquery.init.js
+WARNING 2023-09-22 15:51:06,469 log log_response 254186 140647621191232 Not Found: /staticadmin/js/core.js
+WARNING 2023-09-22 15:51:06,503 log log_response 254186 140647587620416 Not Found: /staticadmin/js/actions.js
+WARNING 2023-09-22 15:51:06,539 basehttp log_message 254186 140647629583936 "GET /staticjazzmin/css/main.css HTTP/1.0" 404 2294
+WARNING 2023-09-22 15:51:06,539 basehttp log_message 254186 140647629583936 "GET /staticjazzmin/css/main.css HTTP/1.0" 404 2294
+WARNING 2023-09-22 15:51:06,544 basehttp log_message 254186 140648148227648 "GET /staticvendor/select2/css/select2.min.css HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:51:06,544 basehttp log_message 254186 140648148227648 "GET /staticvendor/select2/css/select2.min.css HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:51:06,558 log log_response 254186 140647604405824 Not Found: /staticadmin/js/admin/RelatedObjectLookups.js
+WARNING 2023-09-22 15:51:06,589 basehttp log_message 254186 140647621191232 "GET /staticadmin/js/core.js HTTP/1.0" 404 2282
+WARNING 2023-09-22 15:51:06,589 basehttp log_message 254186 140647621191232 "GET /staticadmin/js/core.js HTTP/1.0" 404 2282
+WARNING 2023-09-22 15:51:06,598 basehttp log_message 254186 140647596013120 "GET /staticadmin/js/jquery.init.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 15:51:06,598 basehttp log_message 254186 140647596013120 "GET /staticadmin/js/jquery.init.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 15:51:06,695 log log_response 254186 140647621191232 Not Found: /staticadmin/js/prepopulate.js
+WARNING 2023-09-22 15:51:06,706 basehttp log_message 254186 140647587620416 "GET /staticadmin/js/actions.js HTTP/1.0" 404 2291
+WARNING 2023-09-22 15:51:06,706 basehttp log_message 254186 140647587620416 "GET /staticadmin/js/actions.js HTTP/1.0" 404 2291
+WARNING 2023-09-22 15:51:06,739 log log_response 254186 140648148227648 Not Found: /staticadmin/js/urlify.js
+WARNING 2023-09-22 15:51:06,777 basehttp log_message 254186 140647604405824 "GET /staticadmin/js/admin/RelatedObjectLookups.js HTTP/1.0" 404 2348
+WARNING 2023-09-22 15:51:06,777 basehttp log_message 254186 140647604405824 "GET /staticadmin/js/admin/RelatedObjectLookups.js HTTP/1.0" 404 2348
+WARNING 2023-09-22 15:51:06,829 basehttp log_message 254186 140647621191232 "GET /staticadmin/js/prepopulate.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 15:51:06,829 basehttp log_message 254186 140647621191232 "GET /staticadmin/js/prepopulate.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 15:51:06,889 log log_response 254186 140647587620416 Not Found: /staticadmin/js/vendor/xregexp/xregexp.js
+WARNING 2023-09-22 15:51:06,923 basehttp log_message 254186 140648148227648 "GET /staticadmin/js/urlify.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:51:06,926 log log_response 254186 140647604405824 Not Found: /staticvendor/adminlte/img/AdminLTELogo.png
+WARNING 2023-09-22 15:51:06,923 basehttp log_message 254186 140648148227648 "GET /staticadmin/js/urlify.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:51:06,947 log log_response 254186 140647596013120 Not Found: /staticvendor/bootstrap/js/bootstrap.min.js
+WARNING 2023-09-22 15:51:06,967 basehttp log_message 254186 140647587620416 "GET /staticadmin/js/vendor/xregexp/xregexp.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:51:06,967 basehttp log_message 254186 140647587620416 "GET /staticadmin/js/vendor/xregexp/xregexp.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:51:07,082 basehttp log_message 254186 140647604405824 "GET /staticvendor/adminlte/img/AdminLTELogo.png HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:51:07,082 basehttp log_message 254186 140647604405824 "GET /staticvendor/adminlte/img/AdminLTELogo.png HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:51:07,140 basehttp log_message 254186 140647596013120 "GET /staticvendor/bootstrap/js/bootstrap.min.js HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:51:07,140 basehttp log_message 254186 140647596013120 "GET /staticvendor/bootstrap/js/bootstrap.min.js HTTP/1.0" 404 2342
+WARNING 2023-09-22 15:51:07,164 log log_response 254186 140647621191232 Not Found: /staticvendor/select2/js/select2.min.js
+WARNING 2023-09-22 15:51:07,175 log log_response 254186 140648148227648 Not Found: /staticjazzmin/js/change_list.js
+WARNING 2023-09-22 15:51:07,177 log log_response 254186 140647587620416 Not Found: /staticvendor/adminlte/js/adminlte.min.js
+WARNING 2023-09-22 15:51:07,258 log log_response 254186 140647629583936 Not Found: /staticjazzmin/js/main.js
+WARNING 2023-09-22 15:51:07,304 log log_response 254186 140647596013120 Not Found: /staticadmin/js/vendor/jquery/jquery.js
+WARNING 2023-09-22 15:51:07,329 basehttp log_message 254186 140647621191232 "GET /staticvendor/select2/js/select2.min.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:51:07,329 basehttp log_message 254186 140647621191232 "GET /staticvendor/select2/js/select2.min.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:51:07,345 basehttp log_message 254186 140648148227648 "GET /staticjazzmin/js/change_list.js HTTP/1.0" 404 2309
+WARNING 2023-09-22 15:51:07,345 basehttp log_message 254186 140648148227648 "GET /staticjazzmin/js/change_list.js HTTP/1.0" 404 2309
+WARNING 2023-09-22 15:51:07,354 basehttp log_message 254186 140647587620416 "GET /staticvendor/adminlte/js/adminlte.min.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:51:07,354 basehttp log_message 254186 140647587620416 "GET /staticvendor/adminlte/js/adminlte.min.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 15:51:07,424 basehttp log_message 254186 140647629583936 "GET /staticjazzmin/js/main.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:51:07,424 basehttp log_message 254186 140647629583936 "GET /staticjazzmin/js/main.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 15:51:07,441 basehttp log_message 254186 140647596013120 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:51:07,441 basehttp log_message 254186 140647596013120 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 15:51:30,984 log log_response 254186 140647596013120 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 15:51:30,986 basehttp log_message 254186 140647596013120 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 15:51:30,986 basehttp log_message 254186 140647596013120 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 15:51:31,037 log log_response 254186 140647596013120 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 15:51:31,042 basehttp log_message 254186 140647596013120 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 15:51:31,042 basehttp log_message 254186 140647596013120 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 15:51:33,095 log log_response 254186 140647596013120 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 15:51:33,114 basehttp log_message 254186 140647596013120 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 15:51:33,114 basehttp log_message 254186 140647596013120 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 15:51:37,183 log log_response 254186 140647596013120 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 15:51:37,195 basehttp log_message 254186 140647596013120 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 15:51:37,195 basehttp log_message 254186 140647596013120 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 15:51:45,253 log log_response 254186 140647596013120 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 15:51:45,265 basehttp log_message 254186 140647596013120 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 15:51:45,265 basehttp log_message 254186 140647596013120 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+INFO 2023-09-22 15:51:58,159 autoreload trigger_reload 254186 140648540315648 /home/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 15:51:59,380 autoreload run_with_reloader 254333 140296279224320 Watching for file changes with StatReloader
+INFO 2023-09-22 15:52:19,222 autoreload run_with_reloader 254361 140560833888256 Watching for file changes with StatReloader
+WARNING 2023-09-22 15:52:33,397 log log_response 254361 140560374425152 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 15:52:33,408 basehttp log_message 254361 140560374425152 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 15:52:33,408 basehttp log_message 254361 140560374425152 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 15:53:37,458 log log_response 254361 140560374425152 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 15:53:37,463 basehttp log_message 254361 140560374425152 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 15:53:37,463 basehttp log_message 254361 140560374425152 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 15:54:59,518 log log_response 254361 140560374425152 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 15:54:59,522 basehttp log_message 254361 140560374425152 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 15:54:59,522 basehttp log_message 254361 140560374425152 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+INFO 2023-09-22 15:56:16,274 autoreload trigger_reload 254361 140560833888256 /home/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 15:56:17,336 autoreload run_with_reloader 254509 140514964955136 Watching for file changes with StatReloader
+INFO 2023-09-22 15:56:51,029 autoreload trigger_reload 254509 140514964955136 /home/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 15:56:51,719 autoreload run_with_reloader 254524 140376264105984 Watching for file changes with StatReloader
+INFO 2023-09-22 15:57:42,023 autoreload trigger_reload 254524 140376264105984 /home/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 15:57:43,213 autoreload run_with_reloader 254560 140094091493376 Watching for file changes with StatReloader
+WARNING 2023-09-22 15:58:01,632 log log_response 254560 140093632276032 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 15:58:01,674 basehttp log_message 254560 140093632276032 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 15:58:01,674 basehttp log_message 254560 140093632276032 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+INFO 2023-09-22 15:59:28,831 autoreload trigger_reload 254560 140094091493376 /home/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 15:59:29,789 autoreload run_with_reloader 254618 140613289594880 Watching for file changes with StatReloader
+WARNING 2023-09-22 15:59:52,783 log log_response 254618 140612897494592 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 15:59:52,793 basehttp log_message 254618 140612897494592 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 15:59:52,793 basehttp log_message 254618 140612897494592 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:01:27,847 log log_response 254618 140612897494592 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:01:27,851 basehttp log_message 254618 140612897494592 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:01:27,851 basehttp log_message 254618 140612897494592 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+INFO 2023-09-22 16:02:28,116 autoreload trigger_reload 254618 140613289594880 /home/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 16:02:28,989 autoreload run_with_reloader 254693 139945956483072 Watching for file changes with StatReloader
+WARNING 2023-09-22 16:02:31,917 log log_response 254693 139945566488128 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:02:31,923 basehttp log_message 254693 139945566488128 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:02:31,923 basehttp log_message 254693 139945566488128 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:03:53,969 log log_response 254693 139945566488128 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:03:53,974 basehttp log_message 254693 139945566488128 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:03:53,974 basehttp log_message 254693 139945566488128 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+INFO 2023-09-22 16:04:21,088 autoreload trigger_reload 254693 139945956483072 /home/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 16:04:22,121 autoreload run_with_reloader 254748 140249743396864 Watching for file changes with StatReloader
+WARNING 2023-09-22 16:05:52,038 log log_response 254748 140249351292480 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:05:52,050 basehttp log_message 254748 140249351292480 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:05:52,050 basehttp log_message 254748 140249351292480 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+INFO 2023-09-22 16:06:05,695 autoreload trigger_reload 254748 140249743396864 /home/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 16:06:06,520 autoreload run_with_reloader 254802 139997054050304 Watching for file changes with StatReloader
+WARNING 2023-09-22 16:07:43,105 log log_response 254802 139996593907264 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:07:43,111 basehttp log_message 254802 139996593907264 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:07:43,111 basehttp log_message 254802 139996593907264 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:09:21,173 log log_response 254802 139996593907264 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:09:21,178 basehttp log_message 254802 139996593907264 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:09:21,178 basehttp log_message 254802 139996593907264 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:11:53,242 log log_response 254802 139996593907264 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:11:53,246 basehttp log_message 254802 139996593907264 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:11:53,246 basehttp log_message 254802 139996593907264 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:13:52,302 log log_response 254802 139996593907264 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:13:52,321 basehttp log_message 254802 139996593907264 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:13:52,321 basehttp log_message 254802 139996593907264 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+INFO 2023-09-22 16:15:08,329 autoreload trigger_reload 254802 139997054050304 /home/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 16:15:09,256 autoreload run_with_reloader 254969 140391694405632 Watching for file changes with StatReloader
+WARNING 2023-09-22 16:15:27,410 log log_response 254969 140391302313536 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:15:27,422 basehttp log_message 254969 140391302313536 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:15:27,422 basehttp log_message 254969 140391302313536 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:16:34,474 log log_response 254969 140391302313536 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:16:34,478 basehttp log_message 254969 140391302313536 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:16:34,478 basehttp log_message 254969 140391302313536 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:18:16,533 log log_response 254969 140391302313536 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:18:16,536 basehttp log_message 254969 140391302313536 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:18:16,536 basehttp log_message 254969 140391302313536 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:19:17,579 log log_response 254969 140391302313536 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:19:17,582 basehttp log_message 254969 140391302313536 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:19:17,582 basehttp log_message 254969 140391302313536 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+INFO 2023-09-22 16:20:15,187 autoreload trigger_reload 254969 140391694405632 /home/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 16:20:16,035 autoreload run_with_reloader 255074 140430610452480 Watching for file changes with StatReloader
+WARNING 2023-09-22 16:21:10,642 log log_response 255074 140430218368576 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:21:10,648 basehttp log_message 255074 140430218368576 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:21:10,648 basehttp log_message 255074 140430218368576 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:22:17,698 log log_response 255074 140430218368576 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:22:17,702 basehttp log_message 255074 140430218368576 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:22:17,702 basehttp log_message 255074 140430218368576 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+INFO 2023-09-22 16:22:39,932 autoreload trigger_reload 255074 140430610452480 /home/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 16:22:40,825 autoreload run_with_reloader 255127 139901582000128 Watching for file changes with StatReloader
+WARNING 2023-09-22 16:23:55,751 log log_response 255127 139901189895744 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:23:55,760 basehttp log_message 255127 139901189895744 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:23:55,760 basehttp log_message 255127 139901189895744 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+INFO 2023-09-22 16:25:09,599 autoreload trigger_reload 255127 139901582000128 /home/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 16:25:10,509 autoreload run_with_reloader 255178 140473104605184 Watching for file changes with StatReloader
+WARNING 2023-09-22 16:25:52,819 log log_response 255178 140472712513088 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:25:52,824 basehttp log_message 255178 140472712513088 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:25:52,824 basehttp log_message 255178 140472712513088 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:27:44,878 log log_response 255178 140472712513088 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:27:44,881 basehttp log_message 255178 140472712513088 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:27:44,881 basehttp log_message 255178 140472712513088 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:28:54,939 log log_response 255178 140472712513088 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:28:54,944 basehttp log_message 255178 140472712513088 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:28:54,944 basehttp log_message 255178 140472712513088 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:30:24,002 log log_response 255178 140472712513088 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:30:24,008 basehttp log_message 255178 140472712513088 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:30:24,008 basehttp log_message 255178 140472712513088 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:32:01,064 log log_response 255178 140472712513088 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:32:01,072 basehttp log_message 255178 140472712513088 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:32:01,072 basehttp log_message 255178 140472712513088 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+INFO 2023-09-22 16:32:46,733 autoreload trigger_reload 255178 140473104605184 /home/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 16:32:47,661 autoreload run_with_reloader 255319 140101626896384 Watching for file changes with StatReloader
+WARNING 2023-09-22 16:33:51,137 log log_response 255319 140101162104384 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:33:51,142 basehttp log_message 255319 140101162104384 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:33:51,142 basehttp log_message 255319 140101162104384 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:35:22,197 log log_response 255319 140101162104384 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:35:22,201 basehttp log_message 255319 140101162104384 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:35:22,201 basehttp log_message 255319 140101162104384 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+INFO 2023-09-22 16:35:52,296 autoreload trigger_reload 255319 140101626896384 /home/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 16:35:53,215 autoreload run_with_reloader 255386 140351269552128 Watching for file changes with StatReloader
+WARNING 2023-09-22 16:36:26,264 log log_response 255386 140350807078464 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:36:26,269 basehttp log_message 255386 140350807078464 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:36:26,269 basehttp log_message 255386 140350807078464 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:38:01,324 log log_response 255386 140350807078464 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:38:01,327 basehttp log_message 255386 140350807078464 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:38:01,327 basehttp log_message 255386 140350807078464 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+INFO 2023-09-22 16:38:16,265 autoreload trigger_reload 255386 140351269552128 /home/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 16:38:17,145 autoreload run_with_reloader 255442 139885490937856 Watching for file changes with StatReloader
+WARNING 2023-09-22 16:39:14,390 log log_response 255442 139885098829376 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:39:14,395 basehttp log_message 255442 139885098829376 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:39:14,395 basehttp log_message 255442 139885098829376 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:41:14,453 log log_response 255442 139885098829376 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:41:14,457 basehttp log_message 255442 139885098829376 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:41:14,457 basehttp log_message 255442 139885098829376 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+INFO 2023-09-22 16:42:21,269 autoreload trigger_reload 255442 139885490937856 /home/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 16:42:22,142 autoreload run_with_reloader 255521 140342070005760 Watching for file changes with StatReloader
+WARNING 2023-09-22 16:42:32,523 log log_response 255521 140341610018368 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:42:32,538 basehttp log_message 255521 140341610018368 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:42:32,538 basehttp log_message 255521 140341610018368 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:44:02,591 log log_response 255521 140341610018368 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:44:02,595 basehttp log_message 255521 140341610018368 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:44:02,595 basehttp log_message 255521 140341610018368 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:45:15,646 log log_response 255521 140341610018368 Not Found: /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI
+WARNING 2023-09-22 16:45:15,651 basehttp log_message 255521 140341610018368 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+WARNING 2023-09-22 16:45:15,651 basehttp log_message 255521 140341610018368 "POST /6511281674:AAEVwoS-tTowfxGQD3iOe78vus60j2PlKJI HTTP/1.0" 404 2355
+INFO 2023-09-22 16:46:41,379 basehttp log_message 255521 140341610018368 "GET /admin/expoBot/bot/ HTTP/1.0" 200 16119
+INFO 2023-09-22 16:46:41,379 basehttp log_message 255521 140341610018368 "GET /admin/expoBot/bot/ HTTP/1.0" 200 16119
+WARNING 2023-09-22 16:46:41,474 log log_response 255521 140341610018368 Not Found: /staticvendor/fontawesome-free/css/all.min.css
+WARNING 2023-09-22 16:46:41,482 log log_response 255521 140341564909120 Not Found: /staticvendor/adminlte/css/adminlte.min.css
+WARNING 2023-09-22 16:46:41,517 basehttp log_message 255521 140341610018368 "GET /staticvendor/fontawesome-free/css/all.min.css HTTP/1.0" 404 2351
+WARNING 2023-09-22 16:46:41,517 basehttp log_message 255521 140341610018368 "GET /staticvendor/fontawesome-free/css/all.min.css HTTP/1.0" 404 2351
+WARNING 2023-09-22 16:46:41,525 basehttp log_message 255521 140341564909120 "GET /staticvendor/adminlte/css/adminlte.min.css HTTP/1.0" 404 2342
+WARNING 2023-09-22 16:46:41,525 basehttp log_message 255521 140341564909120 "GET /staticvendor/adminlte/css/adminlte.min.css HTTP/1.0" 404 2342
+WARNING 2023-09-22 16:46:41,607 log log_response 255521 140341564909120 Not Found: /staticvendor/select2/css/select2.min.css
+WARNING 2023-09-22 16:46:41,643 log log_response 255521 140341000791616 Not Found: /staticadmin/js/jquery.init.js
+INFO 2023-09-22 16:46:41,669 basehttp log_message 255521 140341556516416 "GET /admin/jsi18n/ HTTP/1.0" 200 16066
+INFO 2023-09-22 16:46:41,669 basehttp log_message 255521 140341556516416 "GET /admin/jsi18n/ HTTP/1.0" 200 16066
+WARNING 2023-09-22 16:46:41,698 basehttp log_message 255521 140341564909120 "GET /staticvendor/select2/css/select2.min.css HTTP/1.0" 404 2336
+WARNING 2023-09-22 16:46:41,698 basehttp log_message 255521 140341564909120 "GET /staticvendor/select2/css/select2.min.css HTTP/1.0" 404 2336
+WARNING 2023-09-22 16:46:41,703 log log_response 255521 140341610018368 Not Found: /staticjazzmin/css/main.css
+WARNING 2023-09-22 16:46:41,714 log log_response 255521 140341009184320 Not Found: /staticadmin/js/vendor/jquery/jquery.js
+WARNING 2023-09-22 16:46:41,719 basehttp log_message 255521 140341000791616 "GET /staticadmin/js/jquery.init.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 16:46:41,719 basehttp log_message 255521 140341000791616 "GET /staticadmin/js/jquery.init.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 16:46:41,722 log log_response 255521 140340992398912 Not Found: /staticadmin/js/core.js
+WARNING 2023-09-22 16:46:41,741 basehttp log_message 255521 140341610018368 "GET /staticjazzmin/css/main.css HTTP/1.0" 404 2294
+WARNING 2023-09-22 16:46:41,741 basehttp log_message 255521 140341610018368 "GET /staticjazzmin/css/main.css HTTP/1.0" 404 2294
+WARNING 2023-09-22 16:46:41,752 basehttp log_message 255521 140341009184320 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 16:46:41,752 basehttp log_message 255521 140341009184320 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 16:46:41,761 basehttp log_message 255521 140340992398912 "GET /staticadmin/js/core.js HTTP/1.0" 404 2282
+WARNING 2023-09-22 16:46:41,761 basehttp log_message 255521 140340992398912 "GET /staticadmin/js/core.js HTTP/1.0" 404 2282
+WARNING 2023-09-22 16:46:41,774 log log_response 255521 140341009184320 Not Found: /staticadmin/js/admin/RelatedObjectLookups.js
+WARNING 2023-09-22 16:46:41,803 log log_response 255521 140340992398912 Not Found: /staticadmin/js/actions.js
+WARNING 2023-09-22 16:46:41,829 log log_response 255521 140341610018368 Not Found: /staticadmin/js/urlify.js
+WARNING 2023-09-22 16:46:41,858 log log_response 255521 140341000791616 Not Found: /staticadmin/js/prepopulate.js
+WARNING 2023-09-22 16:46:41,862 basehttp log_message 255521 140341009184320 "GET /staticadmin/js/admin/RelatedObjectLookups.js HTTP/1.0" 404 2348
+WARNING 2023-09-22 16:46:41,862 basehttp log_message 255521 140341009184320 "GET /staticadmin/js/admin/RelatedObjectLookups.js HTTP/1.0" 404 2348
+WARNING 2023-09-22 16:46:41,874 basehttp log_message 255521 140340992398912 "GET /staticadmin/js/actions.js HTTP/1.0" 404 2291
+WARNING 2023-09-22 16:46:41,874 basehttp log_message 255521 140340992398912 "GET /staticadmin/js/actions.js HTTP/1.0" 404 2291
+WARNING 2023-09-22 16:46:41,891 log log_response 255521 140341564909120 Not Found: /staticadmin/js/vendor/xregexp/xregexp.js
+WARNING 2023-09-22 16:46:41,910 basehttp log_message 255521 140341610018368 "GET /staticadmin/js/urlify.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 16:46:41,910 basehttp log_message 255521 140341610018368 "GET /staticadmin/js/urlify.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 16:46:41,911 basehttp log_message 255521 140341000791616 "GET /staticadmin/js/prepopulate.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 16:46:41,911 basehttp log_message 255521 140341000791616 "GET /staticadmin/js/prepopulate.js HTTP/1.0" 404 2303
+WARNING 2023-09-22 16:46:41,927 log log_response 255521 140341556516416 Not Found: /staticvendor/adminlte/img/AdminLTELogo.png
+WARNING 2023-09-22 16:46:41,951 log log_response 255521 140340992398912 Not Found: /staticvendor/bootstrap/js/bootstrap.min.js
+WARNING 2023-09-22 16:46:41,961 basehttp log_message 255521 140341564909120 "GET /staticadmin/js/vendor/xregexp/xregexp.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 16:46:41,961 basehttp log_message 255521 140341564909120 "GET /staticadmin/js/vendor/xregexp/xregexp.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 16:46:41,967 basehttp log_message 255521 140341556516416 "GET /staticvendor/adminlte/img/AdminLTELogo.png HTTP/1.0" 404 2342
+WARNING 2023-09-22 16:46:41,967 basehttp log_message 255521 140341556516416 "GET /staticvendor/adminlte/img/AdminLTELogo.png HTTP/1.0" 404 2342
+WARNING 2023-09-22 16:46:42,008 basehttp log_message 255521 140340992398912 "GET /staticvendor/bootstrap/js/bootstrap.min.js HTTP/1.0" 404 2342
+WARNING 2023-09-22 16:46:42,008 basehttp log_message 255521 140340992398912 "GET /staticvendor/bootstrap/js/bootstrap.min.js HTTP/1.0" 404 2342
+WARNING 2023-09-22 16:46:42,069 log log_response 255521 140341564909120 Not Found: /staticvendor/adminlte/js/adminlte.min.js
+WARNING 2023-09-22 16:46:42,079 log log_response 255521 140340992398912 Not Found: /staticvendor/select2/js/select2.min.js
+WARNING 2023-09-22 16:46:42,119 log log_response 255521 140341556516416 Not Found: /staticjazzmin/js/main.js
+WARNING 2023-09-22 16:46:42,137 log log_response 255521 140341009184320 Not Found: /staticadmin/js/vendor/jquery/jquery.js
+WARNING 2023-09-22 16:46:42,141 log log_response 255521 140341610018368 Not Found: /staticjazzmin/js/change_list.js
+WARNING 2023-09-22 16:46:42,141 basehttp log_message 255521 140341564909120 "GET /staticvendor/adminlte/js/adminlte.min.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 16:46:42,141 basehttp log_message 255521 140341564909120 "GET /staticvendor/adminlte/js/adminlte.min.js HTTP/1.0" 404 2336
+WARNING 2023-09-22 16:46:42,154 basehttp log_message 255521 140340992398912 "GET /staticvendor/select2/js/select2.min.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 16:46:42,154 basehttp log_message 255521 140340992398912 "GET /staticvendor/select2/js/select2.min.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 16:46:42,172 basehttp log_message 255521 140341556516416 "GET /staticjazzmin/js/main.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 16:46:42,172 basehttp log_message 255521 140341556516416 "GET /staticjazzmin/js/main.js HTTP/1.0" 404 2288
+WARNING 2023-09-22 16:46:42,192 basehttp log_message 255521 140341009184320 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 16:46:42,192 basehttp log_message 255521 140341009184320 "GET /staticadmin/js/vendor/jquery/jquery.js HTTP/1.0" 404 2330
+WARNING 2023-09-22 16:46:42,200 basehttp log_message 255521 140341610018368 "GET /staticjazzmin/js/change_list.js HTTP/1.0" 404 2309
+WARNING 2023-09-22 16:46:42,200 basehttp log_message 255521 140341610018368 "GET /staticjazzmin/js/change_list.js HTTP/1.0" 404 2309

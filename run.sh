@@ -20,5 +20,5 @@ python3 manage.py migrate
 sleep 1
 python3 manage.py initadmin
 sleep 1
-/bin/gunicorn3 wsgi:application -b 127.0.0.1:8000 --env DJANGO_SETTINGS_MODULE=settings --user www-data --group www-data
-# poetry run python3 manage.py runserver
+PYTHONUNBUFFERED=1 /bin/gunicorn3 wsgi:application -b 127.0.0.1:8000 --env DJANGO_SETTINGS_MODULE=settings --user www-data --group www-data --enable-stdio-inheritance --log-level debug
+#python3 manage.py runserver

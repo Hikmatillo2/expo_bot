@@ -15,13 +15,17 @@ from telebot import TeleBot, types
 from telebot.types import Message
 import random
 from pyrogram import errors
+import os
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
 
 bot = TeleBot(settings.BOT_TOKEN)
+#bot.remove_webhook()
 
-
-def check(app: pyrogram.Client) -> bool | None:
+async def check(app: pyrogram.Client) -> bool | None:
     try:
-        app.get_me()
+        print(await app.get_me())
     except (
             errors.ActiveUserRequired,
             errors.AuthKeyInvalid,
@@ -90,13 +94,15 @@ def handle_file_input(message: Message):
     asyncio.set_event_loop(loop)
     client = pyrogram.Client(f'{user.telegram_id}', int(user.api_id), user.api_hash)
     bot_list = [each.entity for each in list(Bot.objects.all())]
-
+    print(client)
     async def inner(client: pyrogram.Client, loop: AbstractEventLoop, execlFile: bytes | None = None):
+        print(user.__dict__, 1)
         phone = user.phone_number
-
-        await client.connect()
-
-        if check(client):
+        print(phone, 2)
+        print(os.getcwd())
+        print(await client.connect(), 4)
+        print(phone, 3)
+        if await check(client):
 
             for inn in inn_list:
                 entity = random.choice(bot_list)
@@ -111,7 +117,8 @@ def handle_file_input(message: Message):
 
                 data = None
                 async for each in client.get_chat_history(entity, limit=1):
-                    data = each.text
+                    data = each.text or each.caption
+                    # print(each, each.text)
 
                 phone_number_pattern = "\\+?[1-9][0-9]{7,14}"
                 phone_nums: list[str] = re.findall(phone_number_pattern, data)
@@ -127,6 +134,7 @@ def handle_file_input(message: Message):
                 binary_data,
                 caption='Итог'
             )
+            await client.disconnect()
 
         else:
             print('not authorized')
@@ -143,18 +151,22 @@ def handle_file_input(message: Message):
                 user = get_user_by_id(chat_id)
                 # user_condition = BotUserCondition.objects.filter(user=user)[0]
 
-                loop = asyncio.new_event_loop()
+                # loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(loop)
                 import random
-
+ 
                 async def inner(client: pyrogram.Client, loop: AbstractEventLoop):
                     nonlocal phone_code_hash
                     phone = user.phone_number
 
-                    await client.connect()
+                    print(client.is_connected)
+
+                    #await client.connect()
+
                     if '_' in message.text:
                         print("_ in message")
-                        code = ''.join(message.text.split('_'))
+                        code = message.text.replace('_', '')
+                        #code = input('Enter code: ')
                         await client.sign_in(
                             phone,
                             phone_code_hash.phone_code_hash,
@@ -174,7 +186,8 @@ def handle_file_input(message: Message):
 
                             data = None
                             async for each in client.get_chat_history(entity, limit=1):
-                                data = each.text
+                                #data = each.text
+                                data = each.text or each.caption
 
                             phone_number_pattern = "\\+?[1-9][0-9]{7,14}"
                             phone_nums = re.findall(phone_number_pattern, data)
@@ -191,6 +204,7 @@ def handle_file_input(message: Message):
                             binary_data,
                             caption='Итог'
                         )
+                        await client.disconnect()
                     else:
                         bot.send_message(
                             chat_id,
@@ -199,12 +213,12 @@ def handle_file_input(message: Message):
                     bot.register_next_step_handler_by_chat_id(message.chat.id, get_code_from_user)
 
                 loop.run_until_complete(inner(client, loop))
-                client.disconnect()
+                #client.disconnect()
 
             bot.register_next_step_handler_by_chat_id(message.chat.id, get_code_from_user)
 
     loop.run_until_complete(inner(client, loop))
-    client.disconnect()
+#    client.disconnect()
 
 
 @bot.message_handler(content_types=['contact'])
