@@ -108,6 +108,7 @@ def handle_file_input(message: Message):
                 import time
                 time.sleep(30)
 
+
                 data = None
                 async for each in client.get_chat_history(entity, limit=1):
                     data = each.text
