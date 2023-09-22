@@ -1,2 +1,8 @@
 INFO 2023-09-22 15:15:16,544 autoreload trigger_reload 21689 8461475328 /Users/hikmatillo/PycharmProjects/expo_bot/views.py changed, reloading.
 INFO 2023-09-22 15:15:17,163 autoreload run_with_reloader 21708 8461475328 Watching for file changes with StatReloader
+INFO 2023-09-22 15:31:42,625 autoreload trigger_reload 21708 8461475328 /Users/hikmatillo/PycharmProjects/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 15:31:43,355 autoreload run_with_reloader 22033 8461475328 Watching for file changes with StatReloader
+INFO 2023-09-22 15:33:11,234 autoreload trigger_reload 22033 8461475328 /Users/hikmatillo/PycharmProjects/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 15:33:12,166 autoreload run_with_reloader 22071 8461475328 Watching for file changes with StatReloader
+INFO 2023-09-22 15:33:48,523 autoreload trigger_reload 22071 8461475328 /Users/hikmatillo/PycharmProjects/expo_bot/expoBot/service/bot.py changed, reloading.
+INFO 2023-09-22 15:33:49,135 autoreload run_with_reloader 22092 8461475328 Watching for file changes with StatReloader
