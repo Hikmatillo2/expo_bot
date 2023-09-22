@@ -17,7 +17,7 @@ import random
 
 bot = TeleBot(settings.BOT_TOKEN)
 
-bot.remove_webhook()
+# bot.remove_webhook()
 @bot.message_handler(commands=['start'])
 def start_command(message: Message):
     chat_id = str(message.chat.id)
